@@ -9,7 +9,7 @@
 
 settings:
   lookback_hours: 72        # 只看最近 72 小时发布的内容
-  max_new_per_run: 30       # 每次运行最多分析 30 条新内容（控制费用）
+  max_new_per_run: 15       # 每次运行最多分析 15 条新内容（控制费用和免费额度）
   keep_items: 300           # 网站上保留最近 300 条相关情报
 
 prefilter_keywords:

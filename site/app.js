@@ -105,7 +105,7 @@ function openDrawer(id) {
       ${metaLine(it)}
       <h2 id="d-headline">${esc(it.headline)}</h2>
       <div class="d-section"><h4>为什么重要</h4><p>${esc(it.why)}</p></div>
-      ${it.facts?.length ? `<div class="d-section"><h4>原文要点</h4><ul>${it.facts.map((f) => `<li>${esc(f)}</li>`).join("")}</ul></div>` : ""}
+      ${it.facts?.length ? `<div class="d-section"><h4>原文要点</h4><ul>${it.facts.map((f) => (typeof f === "string" ? `<li>${esc(f)}</li>` : `<li>${esc(f.text)}<q class="quote">${esc(f.quote)}</q></li>`)).join("")}</ul></div>` : ""}
       ${it.entities?.length ? `<div class="d-section"><h4>涉及主体</h4><div class="ent">${it.entities.map((e) => `<span class="tag">${esc(e)}</span>`).join("")}</div></div>` : ""}
       <div class="d-section"><h4>建议动作</h4><div class="d-action">${esc(it.action)}</div></div>
       <div class="d-section"><h4>原文</h4><p>${esc(it.source)} · ${esc(it.title_original)}</p></div>

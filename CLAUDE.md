@@ -18,7 +18,7 @@
 
 ## 硬性规则
 
-- 情报卡里的事实（数字、公司名、日期）必须来自原文。不允许改提示词去放宽这一条。
+- 情报卡里的事实（数字、公司名、日期）必须来自原文。每条要点要带原文原句，`analyze.py` 的 `_verified_facts` 逐字核对，对不上就丢。不允许改提示词或核对逻辑去放宽这一条。
 - 模型由 `NINGHAO_PROVIDER`（`gemini` 默认 / `claude`）和 `NINGHAO_MODEL` 决定，默认值只写在 `analyze.py` 的 `DEFAULT_MODELS` 里。不要在别处写死模型名。
 - 两家模型共用 `lens.md` 和 `SCHEMA`。改情报卡字段时，两条调用路径都要检查。
 - 不要提交 `.venv/`、`.env` 或任何 API key。

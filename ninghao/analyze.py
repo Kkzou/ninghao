@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -33,6 +34,14 @@ LENS = (Path(__file__).resolve().parent.parent / "config" / "lens.md").read_text
 CATEGORIES = ["项目动态", "政策法规", "财务披露", "话事人发言", "竞争格局", "市场数据"]
 SIGNALS = ["机会", "风险", "中性"]
 
+# 每条要点 = 中文要点 + 原文原句。原句由代码核对，对不上就丢掉。
+FACT = {
+    "type": "object",
+    "properties": {"fact": {"type": "string"}, "quote": {"type": "string"}},
+    "required": ["fact", "quote"],
+    "additionalProperties": False,
+}
+
 # 结构化输出：模型必须按这个表格填写，代码拿到的一定是合法 JSON
 SCHEMA = {
     "type": "object",
@@ -43,7 +52,7 @@ SCHEMA = {
         "impact": {"type": "integer", "enum": [1, 2, 3, 4, 5]},
         "headline": {"type": "string"},
         "why_it_matters": {"type": "string"},
-        "key_facts": {"type": "array", "items": {"type": "string"}},
+        "key_facts": {"type": "array", "items": FACT},
         "entities": {"type": "array", "items": {"type": "string"}},
         "region": {"type": "string"},
         "action": {"type": "string"},
@@ -53,10 +62,19 @@ SCHEMA = {
     "additionalProperties": False,
 }
 
+
+
+def _without_additional_properties(node):
+    if isinstance(node, dict):
+        return {k: _without_additional_properties(v) for k, v in node.items() if k != "additionalProperties"}
+    if isinstance(node, list):
+        return [_without_additional_properties(v) for v in node]
+    return node
+
+
 # Gemini 的 JSON 表格支持的写法少一些：整数用范围表示，不写 additionalProperties
-GEMINI_SCHEMA = {k: v for k, v in SCHEMA.items() if k != "additionalProperties"}
-GEMINI_SCHEMA["properties"] = {**SCHEMA["properties"],
-                               "impact": {"type": "integer", "minimum": 1, "maximum": 5}}
+GEMINI_SCHEMA = _without_additional_properties(SCHEMA)
+GEMINI_SCHEMA["properties"]["impact"] = {"type": "integer", "minimum": 1, "maximum": 5}
 
 SYSTEM = f"""{LENS}
 
@@ -83,8 +101,35 @@ def _user_prompt(item: dict) -> str:
     )
 
 
-def _finish(text: str, model: str, title: str) -> dict | None:
+_PUNCT = str.maketrans({"‘": "'", "’": "'", "“": '"', "”": '"', "–": "-", "—": "-", "\u00a0": " "})
+MIN_QUOTE = 8  # 原句太短（比如只有「1.5 GW」）没法证明什么
+
+
+def _norm(s: str) -> str:
+    return re.sub(r"\s+", " ", str(s).lower().translate(_PUNCT)).strip()
+
+
+def _verified_facts(facts: list, item: dict) -> list[dict]:
+    """只保留原句真的出现在原文里的要点。允许原句用「...」连接原文中的几段。"""
+    source = _norm(" ".join([item.get("title_original", ""), item.get("summary_original", ""),
+                             item.get("text", "")]))
+    kept = []
+    for f in facts:
+        if not isinstance(f, dict):
+            continue
+        fact, quote = str(f.get("fact", "")).strip(), str(f.get("quote", "")).strip()
+        parts = [p.strip(" .。,，;；:：'\"") for p in re.split(r"\.\.\.|…", _norm(quote))]
+        parts = [p for p in parts if p]
+        if fact and parts and all(len(p) >= MIN_QUOTE and p in source for p in parts):
+            kept.append({"text": fact, "quote": quote})
+        else:
+            log.info("要点的原句在原文里找不到，已丢弃：%s", fact[:40])
+    return kept
+
+
+def _finish(text: str, model: str, item: dict) -> dict | None:
     """解析 JSON 并做最后一道检查。不合格就丢掉，下次运行重试，不替模型猜。"""
+    title = item["title_original"]
     try:
         card = json.loads(text)
     except json.JSONDecodeError:
@@ -95,7 +140,7 @@ def _finish(text: str, model: str, title: str) -> dict | None:
             or card["impact"] not in (1, 2, 3, 4, 5)):
         log.warning("情报卡不合格（%s）：%s", ",".join(missing) or "取值越界", title[:50])
         return None
-    card["key_facts"] = list(card["key_facts"])[:3]
+    card["key_facts"] = _verified_facts(list(card["key_facts"]), item)[:3]
     card["entities"] = list(card["entities"])[:6]
     card["model"] = model
     return card
@@ -131,7 +176,7 @@ def _claude_one(client, item: dict) -> dict | None:
         log.warning("未完成（%s）：%s", resp.stop_reason, title[:50])
         return None
     text = next((b.text for b in resp.content if b.type == "text"), "")
-    return _finish(text, resp.model, title)
+    return _finish(text, resp.model, item)
 
 
 def _claude_all(items: list[dict]) -> list[dict | None]:
@@ -190,7 +235,7 @@ def _gemini_one(client, item: dict, waits=(15, 30, 60)) -> dict | None:
     if not text or str(finish).endswith("MAX_TOKENS"):
         log.warning("Gemini 未返回完整结果（%s）：%s", finish, title[:50])
         return None
-    return _finish(text, resp.model_version or MODEL, title)
+    return _finish(text, resp.model_version or MODEL, item)
 
 
 def _gemini_all(items: list[dict]) -> list[dict | None]:

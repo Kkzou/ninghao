@@ -115,6 +115,7 @@ h1, h2, h3, h4, p { margin: 0; }
 .d-section h4 { font-size: 13px; font-weight: 500; color: var(--muted); margin-bottom: 6px; }
 .d-section p, .d-section li { color: var(--text-2); }
 .d-section ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.quote { display: block; margin-top: 4px; padding-left: 10px; border-left: 2px solid var(--line); color: var(--muted); font-size: 12px; quotes: none; }
 .ent { display: flex; flex-wrap: wrap; gap: 6px; }
 .d-action { background: var(--brand-soft); color: var(--brand); border-radius: 6px; padding: 10px 12px; }
 .btn { display: inline-block; margin-top: 24px; padding: 8px 18px; border-radius: 6px; background: var(--brand); color: #fff; text-decoration: none; }
