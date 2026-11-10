@@ -67,6 +67,9 @@ def main() -> None:
         processed.append(item["id"])
         if card["relevant"]:
             new_entries.append(store.build_entry(item, card))
+    if not processed:
+        log.warning("这次没有分析成功的条目，不更新文件")
+        return
     store.save_seen(list(seen) + processed)
     feed = store.merge_and_save(new_entries, settings["keep_items"])
     log.info("分析 %d 条，相关 %d 条，网站现有 %d 条", len(processed), len(new_entries), len(feed["items"]))

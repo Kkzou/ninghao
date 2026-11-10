@@ -148,6 +148,14 @@ class _DailyQuotaUsed(Exception):
     """当天的免费额度用完了，剩下的条目等额度重置后再分析。"""
 
 
+class _StopBatch(Exception):
+    """key、模型名或请求格式有问题，换下一条也一样会失败，整批停下。"""
+
+    def __init__(self, code: int, message: str):
+        super().__init__(message)
+        self.code = code
+
+
 def _gemini_one(client, item: dict, waits=(15, 30, 60)) -> dict | None:
     from google.genai import errors, types
 
@@ -169,7 +177,9 @@ def _gemini_one(client, item: dict, waits=(15, 30, 60)) -> dict | None:
                 log.info("Gemini 繁忙（%s），%d 秒后重试：%s", exc.code, waits[attempt], title[:40])
                 time.sleep(waits[attempt])
                 continue
-            log.warning("Gemini 错误 %s，跳过：%s", exc.code, title[:50])
+            if exc.code in (400, 401, 403, 404):
+                raise _StopBatch(exc.code, exc.message or str(exc)) from exc
+            log.warning("Gemini 错误 %s（%s），跳过：%s", exc.code, (exc.message or "")[:120], title[:50])
             return None
         except Exception as exc:  # 网络断开等
             log.warning("Gemini 调用失败（%s），跳过：%s", type(exc).__name__, title[:50])
@@ -196,7 +206,24 @@ def _gemini_all(items: list[dict]) -> list[dict | None]:
             log.warning("Gemini 今日免费额度已用完，剩下 %d 条等额度重置后再分析", len(items) - i)
             cards.extend([None] * (len(items) - i))
             break
+        except _StopBatch as exc:
+            log.error("Gemini 错误 %s，本次停止分析：%s", exc.code, str(exc)[:300])
+            if exc.code == 404:
+                _log_available_models(client)
+            cards.extend([None] * (len(items) - i))
+            break
     return cards
+
+
+def _log_available_models(client) -> None:
+    """模型名不可用时，列出这个 key 能调用的模型，方便改 NINGHAO_MODEL。"""
+    try:
+        names = [m.name.removeprefix("models/") for m in client.models.list()
+                 if "generateContent" in (m.supported_actions or [])]
+    except Exception as exc:
+        log.error("也没能列出可用模型（%s）", type(exc).__name__)
+        return
+    log.error("当前模型 %s 不可用。这个 key 能用的模型：%s", MODEL, ", ".join(names) or "（空）")
 
 
 def analyze(items: list[dict]) -> list[tuple[dict, dict | None]]:
