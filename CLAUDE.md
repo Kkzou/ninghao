@@ -22,5 +22,6 @@
 - 模型由 `NINGHAO_PROVIDER`（`gemini` 默认 / `claude`）和 `NINGHAO_MODEL` 决定，默认值只写在 `analyze.py` 的 `DEFAULT_MODELS` 里。不要在别处写死模型名。
 - 两家模型共用 `lens.md` 和 `SCHEMA`。改情报卡字段时，两条调用路径都要检查。
 - 不要提交 `.venv/`、`.env` 或任何 API key。
-- 深蓝色主题，颜色统一用 `site/style.css` 里 `:root` 定义的变量。
+- 白色简洁风格，参考腾讯校招页面：白底、浅灰页面背景、蓝色只用于强调，左侧筛选、右侧列表。不加渐变、发光、动效之类的装饰。颜色统一用 `site/style.css` 里 `:root` 定义的变量。
+- 不引入外部字体或 CDN 资源，用系统字体（国内同事访问不了 Google Fonts）。
 - 页面和文档面向中文读者，用简体中文。
