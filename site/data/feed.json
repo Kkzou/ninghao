@@ -1,6 +1,161 @@
 {
- "updated": "2026-11-10T11:54:55+00:00",
+ "updated": "2026-11-10T12:28:25+00:00",
  "items": [
+  {
+   "id": "e5f9442f3b2b1052",
+   "url": "https://www.energy-storage.news/sumitomo-corporation-greenvolt-deploy-bess-japan/",
+   "source": "Energy-Storage.news",
+   "title_original": "Sumitomo Corporation, Greenvolt deploy BESS at both ends of scale in Japan’s layered market",
+   "published": "2026-11-10T12:20:17+00:00",
+   "broadcast": "2026-11-10T12:28:25+00:00",
+   "image": null,
+   "headline": "住友商事与Greenvolt在日本推进储能项目部署",
+   "why": "日本储能市场处于多层级发展阶段，需关注日本市场本土财阀与跨国开发商的合作模式及电芯采购需求。",
+   "facts": [
+    {
+     "text": "住友商事与Greenvolt在日本推进储能系统（BESS）项目部署。",
+     "quote": "Battery energy storage system (BESS) projects in Japan by Sumitomo Corporation and Greenvolt provide an interesting snapshot of the country’s development landscape."
+    }
+   ],
+   "entities": [
+    "Sumitomo Corporation",
+    "Greenvolt"
+   ],
+   "region": "日本",
+   "category": "项目动态",
+   "signal": "中性",
+   "impact": 2,
+   "action": "持续跟踪住友商事与Greenvolt在日本储能项目的电芯招投标动态。",
+   "model": "gemini-3.6-flash"
+  },
+  {
+   "id": "bf9f4d546b98aef5",
+   "url": "https://www.ess-news.com/2026/11/10/battery-trader-the-mobility-house-restructures-around-v2g-and-eastern-european-storage-markets/",
+   "source": "ESS News",
+   "title_original": "Battery trader The Mobility House restructures around V2G and Eastern European storage markets",
+   "published": "2026-11-10T12:15:00+00:00",
+   "broadcast": "2026-11-10T12:28:25+00:00",
+   "image": "https://www.ess-news.com/wp-content/uploads/2026/11/Peter-Dworak_Querformat_TMHE-e1793879815964.png",
+   "headline": "欧洲储能交易商TMH重组架构，聚焦V2G聚合与中东欧网侧储能",
+   "why": "欧洲V2G聚合正从试点走向商业化交易资产，同时波兰与罗马尼亚等中东欧大储市场提速，需关注下游优化商对电池系统需求及车网互动合作机会。",
+   "facts": [
+    {
+     "text": "The Mobility House Energy 在欧洲电力及辅助服务市场管理的固定储能规模已超过 1 GW。",
+     "quote": "The Mobility House Energy currently manages and trades an active stationary storage portfolio exceeding 1 GW across European power and ancillary service markets"
+    },
+    {
+     "text": "母公司 TMH 将作为聚合商，通过 V2G 和 V2H 应用整合电动汽车与建筑的灵活性资源。",
+     "quote": "Going forward, parent company The Mobility House (TMH) will operate as an aggregator bundling flexibility from electric vehicles and buildings via vehicle-to-grid (V2G) and vehicle-to-home (V2H) applications."
+    },
+    {
+     "text": "该公司任命新 CEO Peter Dworak 领导商业化进入波兰和罗马尼亚市场。",
+     "quote": "spearheading its commercial entry into Poland and Romania."
+    }
+   ],
+   "entities": [
+    "The Mobility House",
+    "The Mobility House Energy",
+    "Peter Dworak",
+    "Marcus Fendt",
+    "Renault"
+   ],
+   "region": "欧洲·德国",
+   "category": "竞争格局",
+   "signal": "中性",
+   "impact": 3,
+   "action": "跟踪中东欧储能项目需求，并评估与欧洲车企及聚合商的V2G合作",
+   "model": "gemini-3.6-flash"
+  },
+  {
+   "id": "532c49ff9c5b98e4",
+   "url": "https://www.energy-storage.news/italy-rwe-and-bnz-launch-construction-on-large-scale-battery-projects/",
+   "source": "Energy-Storage.news",
+   "title_original": "Italy: RWE and BNZ launch construction on large-scale battery projects",
+   "published": "2026-11-10T12:11:44+00:00",
+   "broadcast": "2026-11-10T12:28:25+00:00",
+   "image": null,
+   "headline": "RWE与BNZ在意大利开工建造近500MWh大型储能项目",
+   "why": "意大利大容量储能需求正加速释放，RWE等欧洲主流能源巨头加大布局，建议关注其电芯与系统采购机会。",
+   "facts": [
+    {
+     "text": "电力公司RWE与BNZ宣布在意大利开工建造大型电池储能项目，总容量近500MWh。",
+     "quote": "Power firms RWE and BNZ have both announced construction on large-scale BESS projects in Italy, all-in-all totalling nearly 500MWh of capacity."
+    }
+   ],
+   "entities": [
+    "RWE",
+    "BNZ"
+   ],
+   "region": "欧洲·意大利",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 3,
+   "action": "跟进RWE与BNZ在意项目的电池及系统供应商选定情况",
+   "model": "gemini-3.6-flash"
+  },
+  {
+   "id": "253d81ee2c05e075",
+   "url": "https://www.ne21.com/news/show-232647.html",
+   "source": "世纪新能源网",
+   "title_original": "加快海外光储市场拓展！思格新能源与西门子签署战略合作协议",
+   "published": "2026-11-10T12:00:00+00:00",
+   "broadcast": "2026-11-10T12:28:25+00:00",
+   "image": null,
+   "headline": "思格新能源与西门子达成战略合作 联合拓展海外光储市场",
+   "why": "思格新能源主攻户用与工商业储能，西门子具备全球电气化渠道与技术资源。双方合作可能加速思格的海外市场渗透，关注其后续电池采购需求。",
+   "facts": [
+    {
+     "text": "思格新能源与西门子签署战略合作协议，将在智能化与低碳化领域合作拓展海外市场。",
+     "quote": "思格新能源与西门子（中国）有限公司签署战略合作协议。双方将在电气智能化、数字化和低碳化领域建立合作伙伴关系，围绕光储应用开展联合创新与技术交流，共同拓展海外市场"
+    },
+    {
+     "text": "双方将联合孵化创新技术方案，并通过示范项目验证实际应用场景。",
+     "quote": "双方将围绕光储应用开展课题研究，联合孵化创新技术方案，并通过示范项目验证方案在实际场景中的应用。"
+    },
+    {
+     "text": "双方将结合技术优势与市场资源，推动更多海外光储一体化项目落地。",
+     "quote": "面向海外市场，双方将结合各自的技术优势与市场资源，拓展产品应用，推动更多光储一体化及新能源项目落地。"
+    }
+   ],
+   "entities": [
+    "思格新能源",
+    "西门子"
+   ],
+   "region": "全球",
+   "category": "竞争格局",
+   "signal": "中性",
+   "impact": 2,
+   "action": "跟进思格新能源海外市场扩展动态，评估电芯供货合作机会。",
+   "model": "gemini-3.6-flash"
+  },
+  {
+   "id": "e638cd3d430c25df",
+   "url": "https://theevreport.com/bmw-gen6-battery-cell-suppliers-samsung-sdi-lg-energy-solution",
+   "source": "The EV Report",
+   "title_original": "BMW Adds Samsung SDI, LG Energy Solution as Gen6 Battery Cell Suppliers",
+   "published": "2026-11-10T11:58:02+00:00",
+   "broadcast": "2026-11-10T12:28:25+00:00",
+   "image": null,
+   "headline": "宝马第六代电池供应链新增三星SDI与LG新能源",
+   "why": "宝马是公司海外核心车企客户，韩系竞争对手入局其第六代电池供应链，可能影响公司在宝马新一代电动车平台中的定点份额与交付比重。",
+   "facts": [
+    {
+     "text": "宝马已将三星SDI和LG新能源增列为其第六代电池电芯供应商。",
+     "quote": "BMW Adds Samsung SDI, LG Energy Solution as Gen6 Battery Cell Suppliers"
+    }
+   ],
+   "entities": [
+    "BMW",
+    "Samsung SDI",
+    "LG Energy Solution"
+   ],
+   "region": "欧洲·德国",
+   "category": "竞争格局",
+   "signal": "风险",
+   "impact": 4,
+   "action": "评估宝马第六代平台定点份额变化，持续巩固海外产能与交付优势",
+   "model": "gemini-3.6-flash"
+  },
   {
    "id": "0891e589fbfe6c67",
    "url": "https://www.ess-news.com/2026/11/10/key-takeaways-from-re-source-2026-in-amsterdam/",
