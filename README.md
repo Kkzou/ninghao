@@ -112,7 +112,7 @@ python3 -m http.server 8000 --directory site
 - **改判断标准**：改 `config/lens.md`。这份文件就是宁好的「岗位说明书」，会原样放进模型的系统提示词。
 - **换模型**：
   - `NINGHAO_PROVIDER`：`gemini`（默认）或 `claude`。
-  - `NINGHAO_MODEL`：不设就用默认模型，Gemini 是 `gemini-flash-lite-latest`，Claude 是 `claude-opus-5-5`。
+  - `NINGHAO_MODEL`：不设就用默认模型，Gemini 是 `gemini-3.5-flash-lite`，Claude 是 `claude-opus-5-5`。
   - `NINGHAO_EFFORT`：只对 Claude 生效，可选 `low`、`medium`、`high`，默认 `medium`。
   - 在 GitHub Actions 里，同名的仓库变量（Variables）也能生效。
 

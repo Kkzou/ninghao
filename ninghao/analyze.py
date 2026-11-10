@@ -19,7 +19,7 @@ log = logging.getLogger(__name__)
 
 PROVIDER = os.environ.get("NINGHAO_PROVIDER", "gemini").strip().lower() or "gemini"
 DEFAULT_MODELS = {
-    "gemini": "gemini-flash-lite-latest",  # 免费额度最宽的一档；别名会自动指向最新版本
+    "gemini": "gemini-3.5-flash-lite",  # 免费额度最宽的一档。SDK 走正式版 v1 接口，不支持 -latest 别名
     "claude": "claude-opus-5-5",
 }
 KEY_ENVS = {
