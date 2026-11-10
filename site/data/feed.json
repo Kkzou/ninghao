@@ -1,6 +1,335 @@
 {
- "updated": "2026-11-10T11:47:46+00:00",
+ "updated": "2026-11-10T11:54:55+00:00",
  "items": [
+  {
+   "id": "0891e589fbfe6c67",
+   "url": "https://www.ess-news.com/2026/11/10/key-takeaways-from-re-source-2026-in-amsterdam/",
+   "source": "ESS News",
+   "title_original": "Key takeaways from RE-Source 2026 in Amsterdam",
+   "published": "2026-11-10T11:30:00+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": "https://www.ess-news.com/wp-content/uploads/2026/11/photo_2026-11-09-13.22.03.jpeg",
+   "headline": "欧洲 PPA 市场降温且负电价频发，光储融合与独立储能需求加速上升",
+   "why": "欧洲新能源 PPA 增速放缓，光伏发电因负电价导致收益率下降，市场正转向“光+储”混合项目和独立储能，这直接拉动了当地的大型储能电芯与系统需求，有利于公司在欧洲拓展储能业务。",
+   "facts": [
+    "2026 年前三季度欧洲企业 PPA 签约量为 5.9 GW，同比下降 9.7%",
+    "西班牙太阳能发电期间有近四分之一处于负电价小时数，今年已记录约 920 小时零或负电价",
+    "Pexapark 数据显示独立太阳能 PPA 销量今年下降 43%，意大利已超过西班牙成为最大市场"
+   ],
+   "entities": [
+    "RE-Source Platform",
+    "ACER",
+    "LevelTen Energy",
+    "Pexapark",
+    "Statkraft",
+    "Axpo Solutions"
+   ],
+   "region": "欧洲·阿姆斯特丹",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 4,
+   "action": "关注欧洲光储混合项目及独立储能电站的电芯配套机会",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "a574d864a84fd549",
+   "url": "https://www.datacenterdynamics.com/en/news/ppl-advanced-stage-data-center-pipeline-hits-35gw-in-pennsylvania/",
+   "source": "DatacenterDynamics",
+   "title_original": "PPL advanced stage data center pipeline hits 35GW in Pennsylvania",
+   "published": "2026-11-10T10:49:00+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": "https://media.datacenterdynamics.com/media/images/PPL_LOGO-Registered-Color.2e16d0ba.fill-750x500.jpg",
+   "headline": "美电力巨头PPL推进35GW数据中心管线，规划配储",
+   "why": "PPL在宾州和肯塔基州的数据中心管线增至35.3GW，且其与QTS的2GW供电合作计划引入电池储能，有望创造大型表前或微电网储能系统订单。",
+   "facts": [
+    "PPL在宾州的高级阶段数据中心项目管线增至35.3GW，较第二季度增长3.5GW。",
+    "PPL已就向宾州塞勒姆镇QTS数据中心供应约2GW发电达成商业条款。",
+    "该项目计划采用燃气轮机联合循环电厂、燃料电池以及电池储能，电池储能最早可能于2029年投入运营。"
+   ],
+   "entities": [
+    "PPL",
+    "QTS",
+    "Invitium Energy",
+    "Blackstone Infrastructure",
+    "PJM"
+   ],
+   "region": "美国·宾夕法尼亚",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 4,
+   "action": "跟进PPL与QTS项目的电池储能系统采购和集成商招标进展。",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "d8de453c6e733d9e",
+   "url": "https://www.energy-storage.news/ngen-croatia-first-standalone-transmission-connected-bess-online-60mw-120mwh-capacity/",
+   "source": "Energy-Storage.news",
+   "title_original": "NGEN puts Croatia’s first standalone, transmission-connected BESS online, with 60MW/120MWh capacity",
+   "published": "2026-11-10T10:43:06+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": null,
+   "headline": "克罗地亚首个独立输电级储能项目投运，容量 60MW/120MWh",
+   "why": "欧洲东南部电网侧储能项目落地，显示当地电网级配储需求正在从规划走向实际投运，为供应链提供市场空间。",
+   "facts": [
+    "项目所有者和运营商为 NGEN",
+    "项目位于克罗地亚 Šibenik",
+    "容量为 60MW/120MWh"
+   ],
+   "entities": [
+    "NGEN",
+    "Šibenik"
+   ],
+   "region": "欧洲·克罗地亚",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 3,
+   "action": "关注 NGEN 后续项目的储能系统采购计划",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "9aba2678f4febf90",
+   "url": "https://www.datacenterdynamics.com/en/news/equinix-launches-sg6-data-center-in-singapore/",
+   "source": "DatacenterDynamics",
+   "title_original": "Equinix launches SG6 data center in Singapore",
+   "published": "2026-11-10T10:38:59+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": "https://media.datacenterdynamics.com/media/images/SG6-Exterior.2e16d0ba.fill-750x500.jpg",
+   "headline": "Equinix 在新加坡投运 SG6 数据中心，首期 IT 容量 20MW",
+   "why": "新加坡数据中心解冻并持续扩建，伴随屋顶光伏和绿电需求，可关注其后续配套储能及微电网供电机会。",
+   "facts": [
+    "Equinix 在新加坡正式启动 SG6 数据中心",
+    "第一阶段提供约 1,550 个机柜，完全建成后 IT 容量高达 20MW",
+    "项目初期投资 2.9 亿美元"
+   ],
+   "entities": [
+    "Equinix",
+    "SG6",
+    "National University of Singapore"
+   ],
+   "region": "新加坡",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 2,
+   "action": "关注新加坡数据中心配储及绿电一体化项目需求",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "5eb24b1c6cc0843d",
+   "url": "https://www.cnhinews.com/indiana/news/state_news/article_7f07dc0d-152b-5d38-bf8a-2be88030680e.html",
+   "source": "cnhinews.com",
+   "title_original": "Data center construction manager sought for Terre Haute",
+   "published": "2026-11-10T10:28:51+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": "https://bloximages.chicago2.vip.townnews.com/cnhinews.com/content/tncms/assets/v3/editorial/5/6c/56cd8af5-49fd-537f-8067-60f60e24de84/6a32eb79dcde2.image.jpg?crop=1216%2C638%2C0%2C532&resize=1200%2C630&order=crop%2Cresize",
+   "headline": "印第安纳州数据中心与核电项目推进，或带来储能需求",
+   "why": "印第安纳州推进数据中心及配套能源基础设施建设，AI 与数据中心配储需求可能外溢为商机，需关注当地电网与配储规划。",
+   "facts": [
+    "Fluidstack 正在印第安纳州沙利文县开发 Heartland Industrial Park 数据中心项目，预计 2027 年开始运营。",
+    "沙利文县前 Breed 发电厂旧址正被研究用于建设由 12 座小型模块化反应堆组成的核电厂。",
+    "MGAC 正在为印第安纳州特雷霍特市的 Critical Environments 项目招聘项目经理。"
+   ],
+   "entities": [
+    "Fluidstack",
+    "MGAC",
+    "American Electric Power",
+    "X-Energy"
+   ],
+   "region": "美国·印第安纳州",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 3,
+   "action": "持续跟踪印第安纳州数据中心项目的电力配套及 BESS 招标动态",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "d7b0cf84d26f199b",
+   "url": "https://www.just-auto.com/news/bmw-group-samsung-sdi-lges-battery-suppliers/",
+   "source": "Just Auto",
+   "title_original": "BMW Group adds Samsung SDI and LGES as battery suppliers",
+   "published": "2026-11-10T10:17:58+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": "https://www.just-auto.com/wp-content/uploads/sites/30/2026/11/DI26_000484871.jpg",
+   "headline": "宝马扩大Gen6电池供应链，三星SDI与LGES入选",
+   "why": "宝马为第六代电池引入新供应商，宁德时代继续作为欧洲本地电芯供应商，巩固了其在欧洲市场的配套地位。",
+   "facts": [
+    "宝马集团签约三星SDI在欧洲、LGES在美国为其Gen6高压电池提供电芯",
+    "欧洲生产的电芯将来自宁德时代、亿纬锂能和三星SDI",
+    "Gen6电池组装工厂分布在匈牙利德布勒森、中国沈阳、美国伍德拉夫、墨西哥圣路易斯波托西和德国下巴伐利亚"
+   ],
+   "entities": [
+    "BMW Group",
+    "Samsung SDI",
+    "LG Energy Solution",
+    "CATL",
+    "EVE Energy"
+   ],
+   "region": "全球",
+   "category": "项目动态",
+   "signal": "中性",
+   "impact": 4,
+   "action": "跟进宝马欧洲工厂对宁德时代电芯的实际采购份额与交付进度",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "3f1d65bfce276ce1",
+   "url": "https://www.industrialinfo.com/news/article/dte-boosts-spending-outlook-eyes-data-center-growth--364704",
+   "source": "Industrial Info Resources",
+   "title_original": "DTE Boosts Spending Outlook, Eyes Data Center Growth",
+   "published": "2026-11-10T10:06:41+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": "https://media.industrialinfo.com/news/img/webp/iir_industry_news_power_article_thumbnail_04.webp",
+   "headline": "密歇根州 DTE 提高储能与数据中心投资，但合作方锁定 LG",
+   "why": "DTE Energy 规划了 2.7 GW 储能及面向 Google 数据中心的 480 MW 储能需求，但其电池供应链此前已与竞争对手 LG Energy Solution Vertech 达成 1.5 GW 合作，挤压了市场份额。",
+   "facts": [
+    "DTE 5年投资计划中包含 2.7 GW 的储能资源。",
+    "DTE 此前已与 LG Energy Solution Vertech 合作投资 1.6 GB 的电池储能项目。",
+    "Google 计划在密歇根州 Belleville 建设数据中心，需配套 480 MW 电池储能。"
+   ],
+   "entities": [
+    "DTE Energy",
+    "Google",
+    "LG Energy Solution Vertech",
+    "DTE Electric",
+    "DTE Vantage"
+   ],
+   "region": "美国·密歇根",
+   "category": "项目动态",
+   "signal": "风险",
+   "impact": 3,
+   "action": "追踪 DTE 后续未锁定的储能项目及 Google 数据中心供应链需求",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "8b396e9f4aa2b2a6",
+   "url": "https://www.energy-storage.news/1-2gwh-bess-in-south-australia-and-acenergys-little-river-project-referred-to-australias-epbc-act/",
+   "source": "Energy-Storage.news",
+   "title_original": "1.2GWh BESS in South Australia and ACEnergy’s Little River project referred to Australia’s EPBC Act",
+   "published": "2026-11-10T09:13:08+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": null,
+   "headline": "澳大利亚两个共计1.2GWh储能项目进入联邦审批",
+   "why": "南澳与维州的大型储能项目推进，将释放新的电芯与系统需求，需关注其开发商和后续供应链招标。",
+   "facts": [
+    "南澳和维多利亚州有两个BESS项目提交至联邦政府EPBC法案审批",
+    "其中包含一个1.2GWh的南澳储能项目以及ACEnergy的Little River项目"
+   ],
+   "entities": [
+    "ACEnergy",
+    "EPBC Act"
+   ],
+   "region": "澳大利亚",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 3,
+   "action": "持续跟踪这两个项目的审批进展及后续设备招标计划。",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "ff10040d20f4c45b",
+   "url": "https://www.energy-storage.news/australias-cheaper-home-batteries-program-hits-16-8gwh-installed-capacity/",
+   "source": "Energy-Storage.news",
+   "title_original": "Australia’s Cheaper Home Batteries Program hits 16.8GWh installed capacity",
+   "published": "2026-11-10T09:10:58+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": null,
+   "headline": "澳大利亚家用储能项目累计装机达16.8GWh",
+   "why": "澳洲户储市场规模持续扩大，反映出分布式储能需求旺盛，有利于评估当地电芯及系统出货潜力。",
+   "facts": [
+    "澳大利亚联邦Cheaper Home Batteries Program售出超过60万套家用储能系统",
+    "累计装机容量达到约16.8GWh"
+   ],
+   "entities": [
+    "Cheaper Home Batteries Program"
+   ],
+   "region": "澳大利亚",
+   "category": "市场数据",
+   "signal": "机会",
+   "impact": 3,
+   "action": "跟进澳洲户储市场增长趋势与渠道伙伴需求",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "86dd803108040b69",
+   "url": "https://www.ess-news.com/2026/11/10/vattenfall-brings-in-kraken-to-manage-entire-german-battery-and-renewables-fleet-as-one/",
+   "source": "ESS News",
+   "title_original": "Vattenfall brings in Kraken to manage entire German battery and renewables fleet as one",
+   "published": "2026-11-10T09:10:32+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": "https://www.ess-news.com/wp-content/uploads/2025/12/Brunsbuettel_BESS-Vattenfall.jpg",
+   "headline": "Vattenfall 引入 Kraken 管理德国储能与新能源资产",
+   "why": "德国储能装机持续增长且并网规则优化，Vattenfall 推进 3 GW 电池部署计划，有助于带动当地系统集成与电芯需求。",
+   "facts": [
+    "Vattenfall 选择 Kraken 平台管理其在德国的电网侧储能与新能源资产",
+    "Vattenfall 计划在欧洲部署和签约高达 3 GW 的电池容量",
+    "2026 年前九个月德国电池储能新增装机激增 91% 达到 8.2 GWh"
+   ],
+   "entities": [
+    "Vattenfall",
+    "Kraken",
+    "Octopus Energy Group",
+    "Terralayr"
+   ],
+   "region": "欧洲·德国",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 3,
+   "action": "跟踪 Vattenfall 3 GW 储能容量部署的电池供应链采购计划",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "8d7d8603fc3836cc",
+   "url": "https://batteriesnews.com/catl-and-seres-sign-long-term-strategic-cooperation-agreement/",
+   "source": "Batteries News",
+   "title_original": "CATL and SERES Sign Long-Term Strategic Cooperation Agreement",
+   "published": "2026-11-10T08:44:44+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": "https://batteriesnews.com/wp-content/uploads/2026/11/catl-seres-Cooperation-Agreement.png",
+   "headline": "宁德时代与赛力斯深化战略合作，携手开拓海外市场",
+   "why": "双方扩大国内电池产能并明确深化欧洲、中东及中亚等海外市场拓展，有助于借助车企出海网络带动电池出海。",
+   "facts": [
+    "宁德时代与赛力斯于2026年10月10日在重庆签署长期战略合作协议。",
+    "AITO问界累计交付量已超过120万辆，全系车型将长期采用宁德时代电池。",
+    "双方将推进赛力斯超级工厂Plant in Plant二期项目，年产能达10至12GWh，两期总产能将超20GWh。"
+   ],
+   "entities": [
+    "CATL",
+    "SERES Group",
+    "AITO"
+   ],
+   "region": "全球",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 4,
+   "action": "对接赛力斯出海团队，评估欧洲及中东市场的电池配套与服务协同机会",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "5f2e6afb5078a601",
+   "url": "https://www.ess-news.com/2026/11/10/australia-installs-1-04-gwh-of-home-batteries-in-october/",
+   "source": "ESS News",
+   "title_original": "Australia installs 1.04 GWh of home batteries in October",
+   "published": "2026-11-10T08:30:00+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": "https://www.pv-magazine-australia.com/wp-content/uploads/2026/11/Volumes-by-range-past-three-months.jpg",
+   "headline": "澳大利亚10月户用储能装机1.04GWh，大容量系统占比提升",
+   "why": "澳大利亚户储与工商业储能市场保持高增长，且20kWh以上大容量系统占比达到85%，利好面向澳洲市场的电池与储能系统供应商。",
+   "facts": [
+    "澳大利亚10月家庭和企业安装了1,043 MWh电池储能容量，环比增长9.7%",
+    "20 kWh及以上容量系统占总容量的85%",
+    "联邦能源部长Chris Bowen称该计划实施以来已安装超过60万个电池系统，总计近16.6 GWh"
+   ],
+   "entities": [
+    "SunWiz",
+    "Warwick Johnston",
+    "Chris Bowen"
+   ],
+   "region": "澳大利亚",
+   "category": "市场数据",
+   "signal": "机会",
+   "impact": 3,
+   "action": "关注澳洲户储与中大型工商业储能系统的市场需求及渠道分销机会",
+   "model": "gemini-3.5-flash-lite"
+  },
   {
    "id": "3be4a1a0afd51f7e",
    "url": "https://m.sohu.com/a/1099684746_115479?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
@@ -32,6 +361,29 @@
    "model": "Claude（种子数据，离线生成）"
   },
   {
+   "id": "23760cd4ef4449d0",
+   "url": "https://www.marketscreener.com/news/catl-says-battery-swapping-network-to-support-sodium-ion-battery-adoption-ce785edadb8bf424",
+   "source": "marketscreener.com",
+   "title_original": "CATL Says Battery-Swapping Network to Support Sodium-Ion Battery Adoption",
+   "published": "2026-11-10T08:10:29+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": null,
+   "headline": "宁德时代表示换电网络将支持钠离子电池应用",
+   "why": "钠离子电池产业化进展关乎我们在多元化技术路线和海外成本控制上的布局，换电网络可作为推广新电池技术的有效载体。",
+   "facts": [
+    "宁德时代表示换电网络将支持钠离子电池应用"
+   ],
+   "entities": [
+    "CATL"
+   ],
+   "region": "全球",
+   "category": "竞争格局",
+   "signal": "机会",
+   "impact": 3,
+   "action": "关注钠离子电池在换电及海外市场的应用落地进展。",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
    "id": "22b62ff6537cd45a",
    "url": "https://www.ess-news.com/2026/11/10/ntpc-green-energy-tenders-10-gw-40-gwh-of-battery-systems-in-india/",
    "source": "ESS News",
@@ -39,23 +391,23 @@
    "published": "2026-11-10T07:45:00+00:00",
    "broadcast": "2026-11-10T09:25:48+00:00",
    "image": "https://www.pv-magazine-india.com/wp-content/uploads/2026/11/Screenshot-2026-11-09-231619.png",
-   "headline": "印度NTPC启动40GWh储能全球招标，指定LFP集装箱",
-   "why": "单次招标规模达40GWh，且明确LFP技术路线与15年运维，与宁德时代储能系统产品高度对口；原文未提及对中国供应商的准入限制，需核实标书条款。",
+   "headline": "印 NTPC 招标 10 GW/40 GWh 储能系统",
+   "why": "印度发布超大规模 LFP 储能系统招标，是评估当地市场需求和切入大项目的重要风向标。",
    "facts": [
-    "NTPC Green Energy为其10GW/40GWh储能项目发起全球招标，采购LFP集装箱电池系统及构网型PCS",
-    "范围包括安装调试的监督，以及投运后15年的长期运维服务（LTSA）",
-    "投标方可选择投其中一个、多个或全部标段"
+    "NTPC Green Energy Ltd 招标 10 GW/40 GWh 的 LFP 容器化电池系统及构网型 PCS",
+    "项目包含 15 年长期服务协议",
+    "另单独招标 250 MW/1,000 MWh Kayamkulam 项目的 BoS 包"
    ],
    "entities": [
-    "NTPC Green Energy",
+    "NTPC Green Energy Ltd",
     "NGEL"
    ],
    "region": "印度",
    "category": "项目动态",
    "signal": "机会",
    "impact": 4,
-   "action": "研究标书资格条款，评估以系统或电芯形式参与",
-   "model": "Claude（种子数据，离线生成）"
+   "action": "评估该超大规模储能项目的电芯供应机会",
+   "model": "gemini-3.5-flash-lite"
   },
   {
    "id": "8f5bd6add642c10a",
@@ -92,23 +444,24 @@
    "published": "2026-11-10T07:30:00+00:00",
    "broadcast": "2026-11-10T09:25:48+00:00",
    "image": "https://www.ess-news.com/wp-content/uploads/2026/11/arjun-raj-_HhC-ewWimg-unsplash.jpg",
-   "headline": "ContourGlobal规划奥地利最大储能项目，300MW/1.2GWh",
-   "why": "项目仍处早期，设备供应商尚未确定，是提前介入的窗口期。",
+   "headline": "奥地利规划 1.2GWh 大型储能项目，预计 2029 年投运",
+   "why": "奥地利拟建 GWh 级储能项目，由 ContourGlobal 开发，为欧洲电化学储能市场提供明确需求信号。",
    "facts": [
-    "ContourGlobal计划在上奥地利州Molln建设300MW/1.2GWh储能项目",
-    "若按计划建成，将是奥地利同类最大项目",
-    "公司欧洲负责人确认了地点和规模，但表示其他细节尚未公布"
+    "ContourGlobal 计划在奥地利上奥地利州克希多夫区莫尔恩建设 300 MW/1.2 GWh 的电池储能系统",
+    "项目预计于 2029 年投入运营",
+    "项目目前处于早期阶段，电芯与系统供应商尚未披露"
    ],
    "entities": [
     "ContourGlobal",
-    "Bernegger"
+    "Bernegger",
+    "ContourGlobal BESS Molln GmbH"
    ],
    "region": "欧洲·奥地利",
    "category": "项目动态",
    "signal": "机会",
-   "impact": 3,
-   "action": "联系开发商，了解电芯与系统招标时间表",
-   "model": "Claude（种子数据，离线生成）"
+   "impact": 4,
+   "action": "持续跟进 ContourGlobal 该项目的供应商招标进展",
+   "model": "gemini-3.5-flash-lite"
   },
   {
    "id": "0badd59d5ccbba4e",
@@ -118,26 +471,56 @@
    "published": "2026-11-10T07:09:45+00:00",
    "broadcast": "2026-11-10T09:25:48+00:00",
    "image": "https://shattered.io/wp-content/uploads/2026/11/bmw-adds-samsung-sdi-lg-energy-solution-gen6-battery-suppliers-2026-gen.webp",
-   "headline": "宝马Gen6电池扩充韩系供应商，美国份额给到LG",
-   "why": "宝马按“本地生产、本地供应”分配电芯份额，在美建厂的韩企拿到美国订单；宁德时代仍在欧洲供应名单内，但份额面临分流。",
+   "headline": "宝马扩大第六代电池供应商阵营，三星SDI与LG新能源加入",
+   "why": "宝马在欧洲引入三星SDI和亿纬锂能与我方形成竞争，并在美国引入LG新能源，采用「local for local」属地化供应策略，可能挤压我们在宝马供应链的份额。",
    "facts": [
-    "宝马将三星SDI和LG新能源加入第六代（Gen6）高压电芯供应商名单",
-    "三星SDI在欧洲生产，LG新能源在美国生产，供货从2020年代后期开始",
-    "欧洲Gen6供应商名单此前已有宁德时代、亿纬锂能和三星SDI"
+    "宝马将三星SDI和LG新能源加入第六代（Gen6）高压电池电芯供应商名单",
+    "三星SDI将在欧洲工厂生产并供货，LG新能源将在美国生产并供货",
+    "欧洲市场的第六代电池供应商目前包含宁德时代、亿纬锂能和三星SDI"
    ],
    "entities": [
-    "BMW",
+    "BMW Group",
     "Samsung SDI",
     "LG Energy Solution",
     "CATL",
     "EVE Energy"
    ],
-   "region": "欧洲 / 美国",
+   "region": "欧洲与美国",
    "category": "竞争格局",
    "signal": "风险",
-   "impact": 4,
-   "action": "评估宝马欧洲订单份额变化，研判美国本地化供货路径",
-   "model": "Claude（种子数据，离线生成）"
+   "impact": 3,
+   "action": "评估宝马第六代电池欧洲项目的订单份额及竞争压力",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "3881bf89d46e812b",
+   "url": "https://m.jrj.com.cn/madapter/stock/2026/11/10145659082685.shtml",
+   "source": "金融界",
+   "title_original": "高盛深圳调研之后，勾勒出中国AI基建投资主线：高功率电源、ASIC液冷以及800V直流供电",
+   "published": "2026-11-10T06:56:51+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": null,
+   "headline": "AI数据中心推进800V直流供电与短时储能，带来配电增量",
+   "why": "AI数据中心架构向800V直流供电演进，催生集中转换与短时储能需求，为电池及电力电子技术拓展海外算力基建场景提供了潜在机会。",
+   "facts": [
+    "高盛报告指出800V直流供电将部分设备价值从柜内整流转向集中转换、直流保护和短时储能，预计2027年以局部试点为主，2028年起扩大部署。",
+    "字节跳动2027至2028年规划5至6GW的AI数据中心建设。",
+    "谷歌宣布在马来西亚投资150亿美元，涵盖数据中心园区及清洁电力等项目。"
+   ],
+   "entities": [
+    "高盛",
+    "字节跳动",
+    "谷歌",
+    "亚马逊",
+    "科士达",
+    "英维克"
+   ],
+   "region": "全球",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 3,
+   "action": "评估AI数据中心800V配电与短时储能的技术标准及市场准入机会。",
+   "model": "gemini-3.5-flash-lite"
   },
   {
    "id": "eb3918855b5a9ad4",
@@ -147,24 +530,54 @@
    "published": "2026-11-10T06:00:15+00:00",
    "broadcast": "2026-11-10T09:25:48+00:00",
    "image": "https://img-cdn.publive.online/fit-in/1200x675/solarbytes/media/media_files/2026/11/10/2026-11-10-powerx-gks-1200w-2026-11-10-11-26-08.jpg",
-   "headline": "日本PowerX拟向美供1.5GWh储能，主打FEOC合规",
-   "why": "美国储能项目申领联邦税收抵免需满足FEOC要求，日韩厂商正以“非中国制造”切入美国储能供应链，直接挤压中国电芯的直供空间。",
+   "headline": "日本 PowerX 拟向美供应 1.5 GWh 电池，主打 FEOC 合规",
+   "why": "日本电池企业利用本土制造绕开 FEOC 限制打入美国市场，对我们在美储能业务形成潜在竞争。",
    "facts": [
-    "PowerX与Energy Vault Japan签署非约束性合作协议，探讨供应最多1.5GWh Mega Power系列产品，计划2027年在美国部署",
-    "产品在PowerX日本工厂生产，按美国联邦法律的FEOC要求设计",
-    "该系列包括集装箱式BESS、并网包和内置BESS的模块化数据中心"
+    "PowerX 与 Energy Vault Japan 签署非约束性合作协议",
+    "计划向美国供应最多 1.5 GWh 的 Mega Power 系列储能产品，预计 2027 年部署",
+    "产品由 PowerX 日本工厂制造以满足美国 FEOC 要求"
    ],
    "entities": [
     "PowerX",
     "Energy Vault Japan",
     "Energy Vault Holdings"
    ],
-   "region": "美国 / 日本",
+   "region": "美国",
    "category": "竞争格局",
    "signal": "风险",
    "impact": 4,
-   "action": "跟踪Energy Vault后续采购，梳理FEOC合规替代供应商名单",
-   "model": "Claude（种子数据，离线生成）"
+   "action": "评估日本供应链对美国市场 FEOC 合规项目的竞争影响",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "b53eb900eeb2af62",
+   "url": "https://finance.biggo.com/news/905fcca9-84c6-4c1a-b2ee-f0f85fe08602",
+   "source": "BigGo Finance",
+   "title_original": "Lexus ES EV Takes Aim at South Korea's approximately $50,000 Segment — With a CATL Battery Again",
+   "published": "2026-11-10T02:55:00+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": "https://img.biggo.com/mGzw7H6XmKe1VZ-FAjQTO7JNUE5oxSxF6EBRSiNLrsQ/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTExLzkwNWZjY2E5LTg0YzYtNGMxYS1iMmVlLWYwZjg1ZmUwODYwMl8xNzk0Mjc5NTI2X2RlZmF1bHQud2VicA.jpg",
+   "headline": "雷克萨斯全新纯电 ES 在韩国上市，搭载宁德时代电池",
+   "why": "雷克萨斯首款纯电 ES 在韩国以极具竞争力的价格上市并搭载宁德时代电池，显示出我们在韩系主导市场中成功打入主流豪华车企供应链。",
+   "facts": [
+    "雷克萨斯在韩国市场推出了纯电动 ES350e 和 ES500e，均搭载宁德时代 LFP 电池",
+    "ES350e 基础款起售价为 71.6 万韩元（约合 53,000 美元）",
+    "新 ES 系列在韩国已获得约 5,000 辆的累计订单，纯电车型约占一半"
+   ],
+   "entities": [
+    "Lexus",
+    "CATL",
+    "Volvo",
+    "Polestar",
+    "Tesla",
+    "BMW"
+   ],
+   "region": "韩国",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 4,
+   "action": "跟踪雷克萨斯纯电 ES 的后续销量与订单交付情况",
+   "model": "gemini-3.5-flash-lite"
   },
   {
    "id": "8d1783ae51c52d26",
@@ -174,24 +587,53 @@
    "published": "2026-11-10T02:10:00+00:00",
    "broadcast": "2026-11-10T09:25:48+00:00",
    "image": "https://biz.chosun.com/resizer/v2/LZ3X4WCNPRI2NCPZCU2W3JD5HI.JPG?auth=b7fceae38685685396982ea9597e41e087343582d8d3c6b2db96853cac26fe4a&width=1200&height=630&smart=true",
-   "headline": "韩国7000万韩元级电动车主力车型多用宁德时代电池",
-   "why": "日系豪华品牌在韩国市场的新车继续选用宁德时代电池，说明在韩系电池企业的主场仍具竞争力。",
+   "headline": "雷克萨斯全新纯电 ES 在韩国上市，全线搭载宁德时代电池",
+   "why": "雷克萨斯在韩国推出搭载宁德时代电池的新款纯电 ES 系列，并在 7000 万韩元价格区间占据主导，进一步巩固了我们在韩国进口车市场的电芯份额。",
    "facts": [
-    "雷克萨斯在韩国推出纯电版ES350e、ES500e",
-    "7000万韩元价位的主要车型多数搭载宁德时代电池",
-    "韩国三大电池企业在这一细分市场被边缘化"
+    "雷克萨斯于上个月 13 日在韩国市场发布第八代 ES，包含 ES350e 和 ES500e 纯电车型。",
+    "雷克萨斯 ES350e 和 ES500e、Volvo ES90 以及 Polestar 3 均采用宁德时代的磷酸铁锂（LFP）电池。",
+    "全新 ES 预定及订单总量已达约 5,000 辆，其中纯电车型约占一半。"
    ],
    "entities": [
     "Lexus",
-    "Toyota",
-    "CATL"
+    "CATL",
+    "Volvo",
+    "Polestar",
+    "Hyundai Motor",
+    "LG Energy Solution"
    ],
    "region": "韩国",
    "category": "竞争格局",
    "signal": "机会",
    "impact": 3,
-   "action": "跟踪韩国电动车补贴规则对中国电池车型的影响",
-   "model": "Claude（种子数据，离线生成）"
+   "action": "持续跟踪日系及欧洲车企在韩电动化车型的电池采购与订单表现。",
+   "model": "gemini-3.5-flash-lite"
+  },
+  {
+   "id": "dc82b28bdd9ec9d7",
+   "url": "https://cn.solarbe.com/news/20261110/50031696.html",
+   "source": "碳索储能网",
+   "title_original": "SolarEdge宣布退出澳洲市场！",
+   "published": "2026-11-10T01:48:51+00:00",
+   "broadcast": "2026-11-10T11:54:55+00:00",
+   "image": null,
+   "headline": "SolarEdge退出澳新市场，当地户用储能格局迎真空期",
+   "why": "SolarEdge和SMA相继退出澳洲户用与工商业储能市场，腾出了当地分布式光储及户用电池的市场空间，有助于中国电池企业和集成商进一步开拓澳洲市场。",
+   "facts": [
+    "SolarEdge宣布全面关停其在澳大利亚与新西兰的本地销售及运营业务。",
+    "澳新区域所有最终采购订单需在2026年11月20日前提交，货物最晚交付时间不得迟于2026年12月18日。",
+    "SolarEdge主推其SolarEdge Home Battery户储系统，单体容量10kWh，可用容量9.7kWh。"
+   ],
+   "entities": [
+    "SolarEdge",
+    "SMA"
+   ],
+   "region": "澳大利亚",
+   "category": "竞争格局",
+   "signal": "机会",
+   "impact": 3,
+   "action": "评估澳洲户用储能市场真空期，跟进当地分销商与系统集成商的替代供应需求。",
+   "model": "gemini-3.5-flash-lite"
   },
   {
    "id": "1f4a3018d4e4e20a",
@@ -201,23 +643,27 @@
    "published": "2026-11-10T01:00:00+00:00",
    "broadcast": "2026-11-10T09:25:48+00:00",
    "image": "https://www.ess-news.com/wp-content/uploads/2026/11/Generacion-Solar-SPIC-Zuma-Energia-6-scaled-1-2048x1366-1.jpg",
-   "headline": "墨西哥批准649MW光伏配储项目，2028年起投运",
-   "why": "墨西哥新能源项目审批提速，配储成为标配，储能采购将在未来一到两年内释放。",
+   "headline": "墨西哥批准649MW光储项目，含超600MWh储能",
+   "why": "墨西哥加速推进光储一体化项目，为电池供应商提供了新的拉美市场储能需求机会。",
    "facts": [
-    "墨西哥国家能源委员会批准6个光伏发电许可，新增净装机649MW",
-    "项目将配套电池储能系统，预计投资约7.5亿美元",
-    "计划于2028年和2029年投运"
+    "墨西哥国家能源委员会批准了六个包含电池储能系统的太阳能发电许可，总投资估计为7.5亿美元。",
+    "项目计划于2028年和2029年投入运营，储能规模据报道达到204.38 MW/627.94 MWh。",
+    "获批企业包括Green Park Energy、Ammper Generación和Viva el Sol。"
    ],
    "entities": [
+    "Mexico's National Energy Commission",
     "SENER",
-    "墨西哥国家能源委员会"
+    "Green Park Energy",
+    "Cox group",
+    "Ammper Generación",
+    "Viva el Sol"
    ],
-   "region": "拉美·墨西哥",
+   "region": "墨西哥",
    "category": "项目动态",
    "signal": "机会",
-   "impact": 2,
-   "action": "跟进获批项目开发商的储能采购节奏",
-   "model": "Claude（种子数据，离线生成）"
+   "impact": 3,
+   "action": "追踪获批开发商的电芯及储能系统采购计划",
+   "model": "gemini-3.5-flash-lite"
   },
   {
    "id": "beb1da24af458eb9",
