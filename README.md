@@ -75,11 +75,24 @@ python3 -m http.server 8000 --directory site
 
 然后用浏览器打开 http://localhost:8000。
 
-## 部署到 GitHub（免费）
+## 部署到 GitHub
 
-1. 在仓库的 **Settings → Secrets and variables → Actions** 里添加 `ANTHROPIC_API_KEY`。
+分两个阶段。
+
+**阶段一：私有仓库（手动运行，本地演示）**
+
+1. 在仓库的 **Settings → Secrets and variables → Actions → Secrets** 里添加 `ANTHROPIC_API_KEY`。
+2. 打开 **Actions → 宁好 · 抓取、分析与发布 → Run workflow**，手动运行一次。新情报会存回仓库。
+3. 在本地 `git pull`，再按上面「本地运行」的方法打开网页。
+
+这个阶段不开定时任务，也不发布网站：免费账号的私有仓库每月只有 2000 分钟 Actions 额度，而且用不了 GitHub Pages。
+
+**阶段二：公开上线（定时播报，网址可分享）**
+
+1. 把仓库改成公开（**Settings → General → Danger Zone → Change visibility**）。
 2. 在 **Settings → Pages** 里，把 Source 设为 **GitHub Actions**。
-3. 打开 **Actions → 宁好 · 抓取、分析与发布 → Run workflow**，手动运行一次。
+3. 在 **Settings → Secrets and variables → Actions → Variables** 里添加变量 `NINGHAO_PAGES`，值为 `true`。
+4. 在 `.github/workflows/ninghao.yml` 里删掉 `schedule` 两行开头的 `#`，提交并推送。
 
 之后每 30 分钟会自动运行一次。新情报会存回仓库，网站会自动更新；页面每分钟检查一次，有新内容就弹出提示。
 
@@ -99,7 +112,7 @@ python3 -m http.server 8000 --directory site
 - 关键词预筛：明显无关的条目不会交给 Claude。
 - `max_new_per_run` 限制每次运行最多分析多少条。
 
-GitHub Actions 和 Pages 对公开仓库免费。
+GitHub Actions 和 Pages 对公开仓库免费；私有仓库每月有 2000 分钟免费 Actions 额度，手动运行用不完。
 
 ## 已知局限
 

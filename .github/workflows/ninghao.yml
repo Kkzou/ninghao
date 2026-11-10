@@ -1,8 +1,13 @@
 name: 宁好 · 抓取、分析与发布
 
+# 两个阶段：
+# - 私有仓库（现在）：只在 Actions 页面手动运行，结果存回仓库，不发布网站。
+# - 公开上线：① 删掉下面 schedule 两行开头的 #，打开每 30 分钟定时播报；
+#            ② 在 Settings → Secrets and variables → Actions → Variables 里加 NINGHAO_PAGES = true，发布到 GitHub Pages。
+# 私有仓库先不开定时：免费账号的私有仓库每月只有 2000 分钟 Actions 额度，每 30 分钟跑一次会超。
 on:
-  schedule:
-    - cron: "*/30 * * * *"   # 每 30 分钟检查一次新消息（GitHub 可能延迟几分钟）
+  # schedule:
+  #   - cron: "*/30 * * * *"   # 每 30 分钟检查一次新消息（GitHub 可能延迟几分钟）
   workflow_dispatch:          # 在 Actions 页面手动点一下即可立即运行
   push:
     branches: [main]
@@ -19,6 +24,8 @@ concurrency:
 
 jobs:
   update:
+    # push 只用来重新发布网站，没开 Pages 时直接跳过
+    if: github.event_name != 'push' || vars.NINGHAO_PAGES == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -50,12 +57,15 @@ jobs:
           fi
 
       - uses: actions/configure-pages@v5
+        if: vars.NINGHAO_PAGES == 'true'
       - uses: actions/upload-pages-artifact@v3
+        if: vars.NINGHAO_PAGES == 'true'
         with:
           path: site
 
   deploy:
     needs: update
+    if: vars.NINGHAO_PAGES == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
