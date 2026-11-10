@@ -28,6 +28,7 @@ def enrich_one(item: dict) -> dict:
     if item.pop("needs_decode", False):
         real = _decode_google(item["url"])
         if real:
+            item["fetch_id"] = item["id"]  # 记下 Google 链接的 ID，下次抓到同一条就能直接跳过
             item["url"] = real
             item["id"] = make_id(real)
     try:

@@ -24,7 +24,7 @@ def load_seen() -> set[str]:
 
 def save_seen(seen_ids: list[str]) -> None:
     STATE.parent.mkdir(parents=True, exist_ok=True)
-    STATE.write_text(json.dumps({"seen": seen_ids[-MAX_SEEN:]}, ensure_ascii=False, indent=0),
+    STATE.write_text(json.dumps({"seen": list(dict.fromkeys(seen_ids))[-MAX_SEEN:]}, ensure_ascii=False, indent=0),
                      encoding="utf-8")
 
 

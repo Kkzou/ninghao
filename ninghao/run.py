@@ -43,7 +43,11 @@ def main() -> None:
 
     # 2. 补全：原文链接、正文、配图
     candidates = enrich.enrich(candidates)
-    candidates = [it for it in candidates if it["id"] not in seen]  # Google 链接还原后再去重一次
+    # Google 新闻链接还原成原文链接后，可能是已经处理过的新闻
+    dupes = [it for it in candidates if it["id"] in seen]
+    candidates = [it for it in candidates if it["id"] not in seen]
+    if dupes:
+        log.info("其中 %d 条还原链接后是已处理的新闻，跳过；剩 %d 条待分析", len(dupes), len(candidates))
 
     if args.dry_run:
         for it in candidates:
@@ -60,19 +64,25 @@ def main() -> None:
     results = analyze.analyze(candidates)
 
     # 4. 记忆：记录已处理、更新 feed
-    new_entries, processed = [], []
+    def ids(it: dict) -> list[str]:  # Google 新闻有两个 ID：还原前和还原后，都要记住
+        return [it["id"]] + ([it["fetch_id"]] if it.get("fetch_id") else [])
+
+    new_seen = [i for it in dupes for i in ids(it)]
+    new_entries, processed = [], 0
     for item, card in results:
         if card is None:  # 失败的下次重试，不记入 seen
             continue
-        processed.append(item["id"])
+        processed += 1
+        new_seen += ids(item)
         if card["relevant"]:
             new_entries.append(store.build_entry(item, card))
-    if not processed:
-        log.warning("这次没有分析成功的条目，不更新文件")
+    if new_seen:
+        store.save_seen(list(seen) + new_seen)
+    if not new_entries:
+        log.warning("分析 %d 条，没有新的相关情报，网站不更新", processed)
         return
-    store.save_seen(list(seen) + processed)
     feed = store.merge_and_save(new_entries, settings["keep_items"])
-    log.info("分析 %d 条，相关 %d 条，网站现有 %d 条", len(processed), len(new_entries), len(feed["items"]))
+    log.info("分析 %d 条，相关 %d 条，网站现有 %d 条", processed, len(new_entries), len(feed["items"]))
 
     # 5. 行动：高影响情报推送
     notify.push(new_entries)
