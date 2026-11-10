@@ -30,7 +30,7 @@
 ```mermaid
 flowchart LR
   A[感知<br/>RSS · Google 新闻 · 联邦公报] --> B[补全<br/>原文链接 · 正文 · 配图]
-  B --> C[判断<br/>Claude + 宁德时代视角]
+  B --> C[判断<br/>Gemini 或 Claude + 宁德时代视角]
   C --> D[记忆<br/>去重 · feed.json]
   D --> E[行动<br/>网站播报 · 飞书/企业微信推送]
   T((每 30 分钟<br/>GitHub Actions)) --> A
@@ -40,7 +40,7 @@ flowchart LR
 |---|---|---|
 | 感知 | `ninghao/fetch.py`、`config/sources.yaml` | feedparser、美国联邦公报 API |
 | 补全 | `ninghao/enrich.py` | trafilatura（正文和 og:image）、googlenewsdecoder |
-| 判断 | `ninghao/analyze.py`、`config/lens.md` | Anthropic Python SDK（结构化输出） |
+| 判断 | `ninghao/analyze.py`、`config/lens.md` | Google Gen AI SDK 或 Anthropic SDK（结构化输出），用 `NINGHAO_PROVIDER` 切换 |
 | 记忆 | `ninghao/store.py` | 用 JSON 文件代替数据库，提交回仓库（git scraping 模式） |
 | 行动 | `site/`、`ninghao/notify.py` | GitHub Pages；前端是纯 HTML/CSS/JS，无需构建 |
 
@@ -54,15 +54,23 @@ python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
 
-只抓取、不调用 Claude，用来检查信息源是否正常：
+只抓取、不调用模型，用来检查信息源是否正常：
 
 ```bash
 .venv/bin/python -m ninghao.run --dry-run
 ```
 
-正式运行，需要 Anthropic API key：
+正式运行。默认用 Gemini 的免费额度，key 在 [Google AI Studio](https://aistudio.google.com/apikey) 免费申请：
 
 ```bash
+export GEMINI_API_KEY=你的key
+.venv/bin/python -m ninghao.run --max 5
+```
+
+想换成 Claude：
+
+```bash
+export NINGHAO_PROVIDER=claude
 export ANTHROPIC_API_KEY=你的key
 .venv/bin/python -m ninghao.run --max 5
 ```
@@ -81,7 +89,7 @@ python3 -m http.server 8000 --directory site
 
 **阶段一：私有仓库（手动运行，本地演示）**
 
-1. 在仓库的 **Settings → Secrets and variables → Actions → Secrets** 里添加 `ANTHROPIC_API_KEY`。
+1. 在仓库的 **Settings → Secrets and variables → Actions → Secrets** 里添加 `GEMINI_API_KEY`。想用 Claude 的话，改加 `ANTHROPIC_API_KEY`，并在 **Variables** 里加 `NINGHAO_PROVIDER`，值为 `claude`。
 2. 打开 **Actions → 宁好 · 抓取、分析与发布 → Run workflow**，手动运行一次。新情报会存回仓库。
 3. 在本地 `git pull`，再按上面「本地运行」的方法打开网页。
 
@@ -101,15 +109,22 @@ python3 -m http.server 8000 --directory site
 ## 定制
 
 - **加信息源**：在 `config/sources.yaml` 里加一段，不用改代码。
-- **改判断标准**：改 `config/lens.md`。这份文件就是宁好的「岗位说明书」，会原样放进 Claude 的系统提示词。
-- **换模型或推理强度**：设置环境变量 `NINGHAO_MODEL`（默认 `claude-opus-5-5`）和 `NINGHAO_EFFORT`（`low`、`medium`、`high`，默认 `medium`）。
+- **改判断标准**：改 `config/lens.md`。这份文件就是宁好的「岗位说明书」，会原样放进模型的系统提示词。
+- **换模型**：
+  - `NINGHAO_PROVIDER`：`gemini`（默认）或 `claude`。
+  - `NINGHAO_MODEL`：不设就用默认模型，Gemini 是 `gemini-flash-lite-latest`，Claude 是 `claude-opus-5-5`。
+  - `NINGHAO_EFFORT`：只对 Claude 生效，可选 `low`、`medium`、`high`，默认 `medium`。
+  - 在 GitHub Actions 里，同名的仓库变量（Variables）也能生效。
 
 ## 费用
 
-每条新闻调用一次 Claude，用默认的 Claude Opus 5.5、medium 推理强度，大约 2–3 美分一条。每天处理 50–100 条新内容，一天约 1–3 美元。
+每条新闻调用一次模型。
 
-两个控制费用的设计：
-- 关键词预筛：明显无关的条目不会交给 Claude。
+- **Gemini（默认）**：用免费额度，不花钱。免费额度有每分钟和每天的上限，具体数字以 [Google AI Studio](https://aistudio.google.com) 里你账号的限额页为准。宁好一条一条地分析，遇到每分钟限流会等一会儿再试；当天额度用完，剩下的条目留到下次运行。免费层的输入可能被 Google 用来改进产品，宁好处理的都是公开新闻，影响不大。
+- **Claude**：判断质量更高。用 Claude Opus 5.5、medium 推理强度，大约 2–3 美分一条；每天处理 50–100 条新内容，约 1–3 美元。
+
+两个控制用量的设计：
+- 关键词预筛：明显无关的条目不会交给模型。
 - `max_new_per_run` 限制每次运行最多分析多少条。
 
 GitHub Actions 和 Pages 对公开仓库免费；私有仓库每月有 2000 分钟免费 Actions 额度，手动运行用不完。

@@ -1,16 +1,17 @@
 """宁好主流程：感知 → 补全 → 判断 → 记忆 → 行动。
 
 用法：
-    python -m ninghao.run              # 正常运行（需要 ANTHROPIC_API_KEY）
+    python -m ninghao.run              # 正常运行（默认用 Gemini，需要 GEMINI_API_KEY）
     python -m ninghao.run --max 5      # 只分析 5 条，试跑提示词
-    python -m ninghao.run --dry-run    # 只抓取和补全，不调用 Claude，不写文件
+    python -m ninghao.run --dry-run    # 只抓取和补全，不调用模型，不写文件
+
+切换模型：NINGHAO_PROVIDER=claude（需要 ANTHROPIC_API_KEY）。
 """
 
 from __future__ import annotations
 
 import argparse
 import logging
-import os
 from pathlib import Path
 
 import yaml
@@ -23,10 +24,10 @@ ROOT = Path(__file__).resolve().parent.parent
 def main() -> None:
     ap = argparse.ArgumentParser(description="宁好：宁德时代海外业务实时情报")
     ap.add_argument("--max", type=int, help="本次最多分析几条新内容")
-    ap.add_argument("--dry-run", action="store_true", help="只抓取，不调用 Claude，不写文件")
+    ap.add_argument("--dry-run", action="store_true", help="只抓取，不调用模型，不写文件")
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s", datefmt="%H:%M:%S")
-    for noisy in ("httpx", "httpx2", "trafilatura", "anthropic", "urllib3"):
+    for noisy in ("httpx", "httpx2", "trafilatura", "anthropic", "google_genai", "urllib3"):
         logging.getLogger(noisy).setLevel(logging.ERROR)
     log = logging.getLogger("ninghao")
 
@@ -50,10 +51,12 @@ def main() -> None:
                      "有" if it.get("image") else "无", len(it.get("text", "")))
         return
 
-    # 3. 判断：Claude 以宁德时代视角写情报卡
-    if not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
-        log.warning("没有设置 ANTHROPIC_API_KEY，跳过分析（网站保持现有内容）")
+    # 3. 判断：大模型以宁德时代视角写情报卡
+    if not analyze.has_api_key():
+        key_name = analyze.KEY_ENVS.get(analyze.PROVIDER, ("API key",))[0]
+        log.warning("没有设置 %s，跳过分析（网站保持现有内容）", key_name)
         return
+    log.info("用 %s / %s 分析", analyze.PROVIDER, analyze.MODEL)
     results = analyze.analyze(candidates)
 
     # 4. 记忆：记录已处理、更新 feed

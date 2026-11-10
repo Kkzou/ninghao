@@ -110,7 +110,7 @@ function openDrawer(id) {
       <div class="d-section"><h4>建议动作</h4><div class="d-action">${esc(it.action)}</div></div>
       <div class="d-section"><h4>原文</h4><p class="d-orig">${esc(it.source)} · ${esc(it.title_original)}</p></div>
       <a class="btn" href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a>
-      <p class="d-small">发生于 ${fmt(it.published)} · 播报于 ${fmt(it.broadcast)} · 由 ${esc(it.model || "Claude")} 解读</p>
+      <p class="d-small">发生于 ${fmt(it.published)} · 播报于 ${fmt(it.broadcast)} · 由 ${esc(it.model || "AI")} 解读</p>
     </div>`;
   $("#drawer").classList.add("open");
   $("#drawer").setAttribute("aria-hidden", "false");

@@ -37,9 +37,13 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: 抓取并让 Claude 分析
+      - name: 抓取并让大模型分析
         if: github.event_name != 'push'
         env:
+          # 用哪家模型：仓库变量 NINGHAO_PROVIDER，不设就是 gemini（免费）
+          NINGHAO_PROVIDER: ${{ vars.NINGHAO_PROVIDER || 'gemini' }}
+          NINGHAO_MODEL: ${{ vars.NINGHAO_MODEL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NOTIFY_WEBHOOK_URL: ${{ secrets.NOTIFY_WEBHOOK_URL }}
         run: python -m ninghao.run

@@ -33,7 +33,7 @@ def load_feed() -> dict:
 
 
 def build_entry(item: dict, card: dict) -> dict:
-    """把原文信息和 Claude 的情报卡合并成网站展示用的一条。"""
+    """把原文信息和模型写的情报卡合并成网站展示用的一条。"""
     return {
         "id": item["id"],
         "url": item["url"],

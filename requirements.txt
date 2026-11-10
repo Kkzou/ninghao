@@ -1,4 +1,5 @@
 anthropic>=2.7
+google-genai>=3.0
 feedparser>=6.0
 trafilatura>=2.0
 googlenewsdecoder>=0.1

@@ -11,7 +11,7 @@ import trafilatura
 from .fetch import UA, make_id
 
 log = logging.getLogger(__name__)
-MAX_TEXT = 6000  # 交给 Claude 的正文上限（字符）
+MAX_TEXT = 6000  # 交给模型的正文上限（字符）
 
 
 def _decode_google(url: str) -> str | None:

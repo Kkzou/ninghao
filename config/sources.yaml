@@ -5,7 +5,7 @@
 #   google_news      Google 新闻搜索（会自动还原原文链接，能覆盖新华社、人民网等官媒）
 #   federal_register 美国联邦公报 API（法规、拟议规则、公告）
 #
-# prefilter: true 表示先用关键词粗筛，只把可能相关的条目交给 Claude，节省费用。
+# prefilter: true 表示先用关键词粗筛，只把可能相关的条目交给模型，节省费用。
 
 settings:
   lookback_hours: 72        # 只看最近 72 小时发布的内容
