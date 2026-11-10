@@ -104,6 +104,14 @@ python3 -m http.server 8000 --directory site
 
 之后每 30 分钟会自动运行一次。新情报会存回仓库，网站会自动更新；页面每分钟检查一次，有新内容就弹出提示。
 
+**另一种上线方式：保持私有，用 Vercel 托管（宁好现在用的就是这种）**
+
+1. 在 Vercel 导入这个 GitHub 仓库，Root Directory 设为 `site`，不需要构建命令。
+2. 之后每次有提交（包括 Actions 存回的新情报），Vercel 都会自动重新发布。
+3. 在 Vercel 项目的 Domains 里加上自己的域名，再到域名服务商那里按 Vercel 提示加 DNS 记录。
+
+这种方式不需要 `NINGHAO_PAGES` 变量。Vercel 默认只公开自定义域名，`*.vercel.app` 地址需要登录 Vercel 才能看。
+
 **可选：推送到群聊。** 添加 `NOTIFY_WEBHOOK_URL` 密钥，填飞书或企业微信群机器人的 webhook 地址。影响分 ≥ 4 的情报会推送到群里。
 
 ## 定制
