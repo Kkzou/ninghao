@@ -1,0 +1,131 @@
+# 宁好的信息源。加新源只需要在这里加一段，不用改代码。
+#
+# type 有三种：
+#   rss              普通 RSS/Atom 订阅源
+#   google_news      Google 新闻搜索（会自动还原原文链接，能覆盖新华社、人民网等官媒）
+#   federal_register 美国联邦公报 API（法规、拟议规则、公告）
+#
+# prefilter: true 表示先用关键词粗筛，只把可能相关的条目交给 Claude，节省费用。
+
+settings:
+  lookback_hours: 72        # 只看最近 72 小时发布的内容
+  max_new_per_run: 30       # 每次运行最多分析 30 条新内容（控制费用）
+  keep_items: 300           # 网站上保留最近 300 条相关情报
+
+prefilter_keywords:
+  - battery
+  - batteries
+  - storage
+  - bess
+  - lithium
+  - lfp
+  - sodium-ion
+  - solid-state
+  - data center
+  - datacenter
+  - data centre
+  - hyperscale
+  - grid
+  - interconnection
+  - tariff
+  - feoc
+  - foreign entity
+  - 45x
+  - 48e
+  - catl
+  - contemporary amperex
+  - gigafactory
+  - pjm
+  - ercot
+  - caiso
+  - capacity market
+  - microgrid
+  - electric vehicle
+  - " ev "
+
+sources:
+  # —— 储能与电池行业媒体 ——
+  - id: energy-storage-news
+    name: Energy-Storage.news
+    type: rss
+    url: https://www.energy-storage.news/feed/
+    prefilter: false
+    max_items: 40
+  - id: ess-news
+    name: ESS News
+    type: rss
+    url: https://www.ess-news.com/feed/
+    prefilter: false
+  # —— 电力与公用事业 ——
+  - id: utility-dive
+    name: Utility Dive
+    type: rss
+    url: https://www.utilitydive.com/feeds/news/
+    prefilter: true
+  - id: canary-media
+    name: Canary Media
+    type: rss
+    url: https://www.canarymedia.com/rss.rss
+    prefilter: true
+    max_items: 30
+  - id: pv-magazine-usa
+    name: pv magazine USA
+    type: rss
+    url: https://pv-magazine-usa.com/feed/
+    prefilter: true
+  # —— AI 数据中心 ——
+  - id: datacenter-dynamics
+    name: DatacenterDynamics
+    type: rss
+    url: https://www.datacenterdynamics.com/en/rss/
+    prefilter: true
+  - id: datacenter-knowledge
+    name: Data Center Knowledge
+    type: rss
+    url: https://www.datacenterknowledge.com/rss.xml
+    prefilter: true
+  # —— 官方数据 ——
+  - id: eia
+    name: 美国能源信息署 EIA
+    type: rss
+    url: https://www.eia.gov/rss/todayinenergy.xml
+    prefilter: true
+  - id: federal-register
+    name: 美国联邦公报
+    type: federal_register
+    terms:
+      - lithium-ion battery
+      - energy storage
+      - foreign entity of concern
+      - section 301
+  # —— Google 新闻搜索：补充大媒体和官媒 ——
+  - id: gn-dc-storage
+    name: Google 新闻
+    type: google_news
+    query: '"battery storage" "data center"'
+    lang: en
+  - id: gn-feoc
+    name: Google 新闻
+    type: google_news
+    query: 'FEOC OR "foreign entity of concern" battery'
+    lang: en
+  - id: gn-tariff
+    name: Google 新闻
+    type: google_news
+    query: 'tariff Chinese lithium-ion batteries'
+    lang: en
+  - id: gn-catl
+    name: Google 新闻
+    type: google_news
+    query: 'CATL battery'
+    lang: en
+  - id: gn-catl-cn
+    name: Google 新闻（中文）
+    type: google_news
+    query: '宁德时代 海外'
+    lang: zh
+  - id: gn-storage-cn
+    name: Google 新闻（中文）
+    type: google_news
+    query: '储能 美国 数据中心'
+    lang: zh

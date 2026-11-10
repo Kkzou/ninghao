@@ -1,0 +1,65 @@
+name: 宁好 · 抓取、分析与发布
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # 每 30 分钟检查一次新消息（GitHub 可能延迟几分钟）
+  workflow_dispatch:          # 在 Actions 页面手动点一下即可立即运行
+  push:
+    branches: [main]
+    paths: ["site/**", "config/**", "ninghao/**", ".github/workflows/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ninghao
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 抓取并让 Claude 分析
+        if: github.event_name != 'push'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NOTIFY_WEBHOOK_URL: ${{ secrets.NOTIFY_WEBHOOK_URL }}
+        run: python -m ninghao.run
+
+      - name: 把新情报存回仓库
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/feed.json data/state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "播报更新 $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

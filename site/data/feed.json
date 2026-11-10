@@ -1,0 +1,481 @@
+{
+ "updated": "2026-11-10T09:25:48+00:00",
+ "items": [
+  {
+   "id": "3be4a1a0afd51f7e",
+   "url": "https://m.sohu.com/a/1099684746_115479?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+   "source": "搜狐网",
+   "title_original": "与中铝签约，宁德时代密集合作勾勒核心业务延伸线",
+   "published": "2026-11-10T08:25:17+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "//q0.itc.cn/q_70/images03/20261110/7327397c1d064e9db6880adb99f71d17.jpeg",
+   "headline": "宁德时代密集签约：欧洲户储牵手章鱼能源，中铝合作含全球配套",
+   "why": "近三个月合作集中在上游材料、海外储能与物流，显示公司正把储能出海从卖产品延伸到生态合作。",
+   "facts": [
+    "宁德时代11月8日发布消息，近日与中铝集团签署战略合作协议，涵盖绿电直连与储能、全球化产业链配套等",
+    "9月以来与德迅集团、Renovatio Solar、埃及BME等签约，聚焦海外储能与物流",
+    "11月与面向欧洲家用储能的章鱼能源等签署合作协议"
+   ],
+   "entities": [
+    "宁德时代",
+    "中铝集团",
+    "章鱼能源",
+    "德迅集团",
+    "Renovatio Solar",
+    "埃及BME"
+   ],
+   "region": "全球",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 3,
+   "action": "梳理近三个月海外合作清单，跟踪落地进度",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "22b62ff6537cd45a",
+   "url": "https://www.ess-news.com/2026/11/10/ntpc-green-energy-tenders-10-gw-40-gwh-of-battery-systems-in-india/",
+   "source": "ESS News",
+   "title_original": "NTPC Green Energy tenders 10 GW/40 GWh of battery systems in India",
+   "published": "2026-11-10T07:45:00+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://www.pv-magazine-india.com/wp-content/uploads/2026/11/Screenshot-2026-11-09-231619.png",
+   "headline": "印度NTPC启动40GWh储能全球招标，指定LFP集装箱",
+   "why": "单次招标规模达40GWh，且明确LFP技术路线与15年运维，与宁德时代储能系统产品高度对口；原文未提及对中国供应商的准入限制，需核实标书条款。",
+   "facts": [
+    "NTPC Green Energy为其10GW/40GWh储能项目发起全球招标，采购LFP集装箱电池系统及构网型PCS",
+    "范围包括安装调试的监督，以及投运后15年的长期运维服务（LTSA）",
+    "投标方可选择投其中一个、多个或全部标段"
+   ],
+   "entities": [
+    "NTPC Green Energy",
+    "NGEL"
+   ],
+   "region": "印度",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 4,
+   "action": "研究标书资格条款，评估以系统或电芯形式参与",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "8f5bd6add642c10a",
+   "url": "https://cnevpost.com/2026/11/10/catl-swap-network-help-sodium-ion-adoption/",
+   "source": "CnEVPost",
+   "title_original": "CATL says expanding swap network will help accelerate sodium-ion battery adoption",
+   "published": "2026-11-10T07:43:00+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://cnevpost.com/wp-content/uploads/2026/11/2026111007390998.jpg",
+   "headline": "曾毓群：换电网络将加速钠离子电池普及",
+   "why": "董事长对钠电商业化的公开表态，可作为海外储能与车企客户沟通钠电路线时的统一口径。",
+   "facts": [
+    "宁德时代换电站已覆盖中国约200个城市，目标年底前乘用车换电站超过3000座",
+    "曾毓群表示钠离子电池续航足以满足日常城市出行",
+    "讲话发生在Benchmark Mineral Intelligence上海活动，彭博社报道"
+   ],
+   "entities": [
+    "宁德时代",
+    "曾毓群",
+    "Benchmark Mineral Intelligence"
+   ],
+   "region": "中国",
+   "category": "话事人发言",
+   "signal": "机会",
+   "impact": 3,
+   "action": "同步钠电进展到海外客户沟通材料",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "806ffb6e2097895e",
+   "url": "https://www.ess-news.com/2026/11/10/contourglobal-plans-300-mw-1-2-gwh-battery-project-in-austria/",
+   "source": "ESS News",
+   "title_original": "ContourGlobal plans 300 MW/1.2 GWh battery project in Austria",
+   "published": "2026-11-10T07:30:00+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://www.ess-news.com/wp-content/uploads/2026/11/arjun-raj-_HhC-ewWimg-unsplash.jpg",
+   "headline": "ContourGlobal规划奥地利最大储能项目，300MW/1.2GWh",
+   "why": "项目仍处早期，设备供应商尚未确定，是提前介入的窗口期。",
+   "facts": [
+    "ContourGlobal计划在上奥地利州Molln建设300MW/1.2GWh储能项目",
+    "若按计划建成，将是奥地利同类最大项目",
+    "公司欧洲负责人确认了地点和规模，但表示其他细节尚未公布"
+   ],
+   "entities": [
+    "ContourGlobal",
+    "Bernegger"
+   ],
+   "region": "欧洲·奥地利",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 3,
+   "action": "联系开发商，了解电芯与系统招标时间表",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "0badd59d5ccbba4e",
+   "url": "https://shattered.io/bmw-adds-samsung-sdi-lg-energy-solution-gen6-battery-suppliers-2026/",
+   "source": "shattered.io",
+   "title_original": "BMW Adds Samsung SDI, LG Energy Solution for Gen6 [2026]",
+   "published": "2026-11-10T07:09:45+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://shattered.io/wp-content/uploads/2026/11/bmw-adds-samsung-sdi-lg-energy-solution-gen6-battery-suppliers-2026-gen.webp",
+   "headline": "宝马Gen6电池扩充韩系供应商，美国份额给到LG",
+   "why": "宝马按“本地生产、本地供应”分配电芯份额，在美建厂的韩企拿到美国订单；宁德时代仍在欧洲供应名单内，但份额面临分流。",
+   "facts": [
+    "宝马将三星SDI和LG新能源加入第六代（Gen6）高压电芯供应商名单",
+    "三星SDI在欧洲生产，LG新能源在美国生产，供货从2020年代后期开始",
+    "欧洲Gen6供应商名单此前已有宁德时代、亿纬锂能和三星SDI"
+   ],
+   "entities": [
+    "BMW",
+    "Samsung SDI",
+    "LG Energy Solution",
+    "CATL",
+    "EVE Energy"
+   ],
+   "region": "欧洲 / 美国",
+   "category": "竞争格局",
+   "signal": "风险",
+   "impact": 4,
+   "action": "评估宝马欧洲订单份额变化，研判美国本地化供货路径",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "eb3918855b5a9ad4",
+   "url": "https://solarbytes.info/battery-and-energy-storage-system/powerx-signs-pact-energy-vault-japan-1-5-gwh-bess-supply-us-feoc-data-centers-japan-12797687",
+   "source": "Solarbytes",
+   "title_original": "PowerX signs pact with Energy Vault Japan on 1.5 GWh US BESS supply",
+   "published": "2026-11-10T06:00:15+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://img-cdn.publive.online/fit-in/1200x675/solarbytes/media/media_files/2026/11/10/2026-11-10-powerx-gks-1200w-2026-11-10-11-26-08.jpg",
+   "headline": "日本PowerX拟向美供1.5GWh储能，主打FEOC合规",
+   "why": "美国储能项目申领联邦税收抵免需满足FEOC要求，日韩厂商正以“非中国制造”切入美国储能供应链，直接挤压中国电芯的直供空间。",
+   "facts": [
+    "PowerX与Energy Vault Japan签署非约束性合作协议，探讨供应最多1.5GWh Mega Power系列产品，计划2027年在美国部署",
+    "产品在PowerX日本工厂生产，按美国联邦法律的FEOC要求设计",
+    "该系列包括集装箱式BESS、并网包和内置BESS的模块化数据中心"
+   ],
+   "entities": [
+    "PowerX",
+    "Energy Vault Japan",
+    "Energy Vault Holdings"
+   ],
+   "region": "美国 / 日本",
+   "category": "竞争格局",
+   "signal": "风险",
+   "impact": 4,
+   "action": "跟踪Energy Vault后续采购，梳理FEOC合规替代供应商名单",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "8d1783ae51c52d26",
+   "url": "https://biz.chosun.com/en/en-industry/2026/11/10/FYGVWEYU6RFFHAZIQINJ6RULSQ/?outputType=amp",
+   "source": "Chosunbiz",
+   "title_original": "Lexus fuels Korea’s 70 million-won EV race as CATL batteries dominate",
+   "published": "2026-11-10T02:10:00+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://biz.chosun.com/resizer/v2/LZ3X4WCNPRI2NCPZCU2W3JD5HI.JPG?auth=b7fceae38685685396982ea9597e41e087343582d8d3c6b2db96853cac26fe4a&width=1200&height=630&smart=true",
+   "headline": "韩国7000万韩元级电动车主力车型多用宁德时代电池",
+   "why": "日系豪华品牌在韩国市场的新车继续选用宁德时代电池，说明在韩系电池企业的主场仍具竞争力。",
+   "facts": [
+    "雷克萨斯在韩国推出纯电版ES350e、ES500e",
+    "7000万韩元价位的主要车型多数搭载宁德时代电池",
+    "韩国三大电池企业在这一细分市场被边缘化"
+   ],
+   "entities": [
+    "Lexus",
+    "Toyota",
+    "CATL"
+   ],
+   "region": "韩国",
+   "category": "竞争格局",
+   "signal": "机会",
+   "impact": 3,
+   "action": "跟踪韩国电动车补贴规则对中国电池车型的影响",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "1f4a3018d4e4e20a",
+   "url": "https://www.ess-news.com/2026/11/10/mexico-approves-solar-permits-for-649-mw-with-battery-storage/",
+   "source": "ESS News",
+   "title_original": "Mexico approves solar permits for 649 MW with battery storage",
+   "published": "2026-11-10T01:00:00+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://www.ess-news.com/wp-content/uploads/2026/11/Generacion-Solar-SPIC-Zuma-Energia-6-scaled-1-2048x1366-1.jpg",
+   "headline": "墨西哥批准649MW光伏配储项目，2028年起投运",
+   "why": "墨西哥新能源项目审批提速，配储成为标配，储能采购将在未来一到两年内释放。",
+   "facts": [
+    "墨西哥国家能源委员会批准6个光伏发电许可，新增净装机649MW",
+    "项目将配套电池储能系统，预计投资约7.5亿美元",
+    "计划于2028年和2029年投运"
+   ],
+   "entities": [
+    "SENER",
+    "墨西哥国家能源委员会"
+   ],
+   "region": "拉美·墨西哥",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 2,
+   "action": "跟进获批项目开发商的储能采购节奏",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "beb1da24af458eb9",
+   "url": "https://www.cls.cn/detail/2506034",
+   "source": "财联社",
+   "title_original": "海外研选 | 高盛：全球电池供需比或2029年触底 储能增长难抵过剩",
+   "published": "2026-11-10T00:43:05+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": null,
+   "headline": "高盛：海外储能本地产能不足，但过剩或延续至2029年",
+   "why": "只算本地产能，海外电池供需尚有缺口；一旦计入中国潜在出口则严重过剩。这意味着关税与FEOC等准入规则，比产能本身更决定海外市场格局。",
+   "facts": [
+    "高盛预计中国以外市场仅计本地产能的需求/供应比从2026年110%降至2027年104%，2030年回升至131%",
+    "若计入中国潜在出口，该比例2026年为33%、2027年为32%、2030年仅40%",
+    "高盛将韩国电芯厂商2027、2028年盈利预测平均下调10%"
+   ],
+   "entities": [
+    "高盛",
+    "宁德时代"
+   ],
+   "region": "全球",
+   "category": "市场数据",
+   "signal": "中性",
+   "impact": 3,
+   "action": "用高盛供需模型校准海外储能报价与产能规划",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "575e2efa508e1a98",
+   "url": "https://wsbt.com/news/local/company-proposing-data-center-nextnrg-south-bend-northwest-side-lone-wolf-drive-toll-road-us-31-battery-storage-pharmaceutical-company-70-to-100-megawatts-st-joseph-county-indiana",
+   "source": "WSBT",
+   "title_original": "Company proposing battery storage facility, data center infrastructure site in South Bend",
+   "published": "2026-11-09T22:15:10+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://wsbt.com/resources/media2/16x9/1920/1320/center/90/e8c11717-e0b7-4907-b399-efc98e4ffd81-SBDataCenterWP.0015_frame_1189.jpeg",
+   "headline": "印第安纳南本德拟建“数据中心+储能”能源中心，尚处早期",
+   "why": "美国中西部出现“现场发电+储能+算力”的小型园区模式，规模不大，但代表数据中心自带电源的趋势。",
+   "facts": [
+    "nextNRG计划将27英亩土地开发为数据中心基础设施、电池储能和制药用地",
+    "项目名为Lone Wolf Energy Center，处于早期，交易尚未正式完成",
+    "公司计划收购South Bend西北侧约33英亩地块"
+   ],
+   "entities": [
+    "nextNRG"
+   ],
+   "region": "美国·印第安纳",
+   "category": "项目动态",
+   "signal": "中性",
+   "impact": 2,
+   "action": "列入观察名单，待项目确定后再评估",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "88bd5a82b6e0c610",
+   "url": "https://www.datacenterdynamics.com/en/news/norway-halts-grid-connection-applications-for-new-data-centers/",
+   "source": "DatacenterDynamics",
+   "title_original": "Norway halts grid connection applications for new data centers",
+   "published": "2026-11-09T17:48:46+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://media.datacenterdynamics.com/media/images/green_mountain_enebakk_oslo_norway.2e16d0ba.fill-750x500.png",
+   "headline": "挪威暂停新数据中心并网预留，最迟2027年8月恢复",
+   "why": "欧洲电网容量正成为数据中心扩张瓶颈，“自带储能、柔性负荷”的方案可能成为获取并网资格的筹码。",
+   "facts": [
+    "挪威政府暂停为新数据中心预留并网容量，已并网或已获批项目不受影响",
+    "系统运营商Statnett预计最迟于2027年8月1日解除暂停",
+    "政府计划建立数据中心许可制度"
+   ],
+   "entities": [
+    "Statnett",
+    "挪威政府"
+   ],
+   "region": "欧洲·挪威",
+   "category": "政策法规",
+   "signal": "中性",
+   "impact": 3,
+   "action": "关注北欧数据中心对表后储能的需求变化",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "dd7f8949fe94c00a",
+   "url": "https://www.ess-news.com/2026/11/09/portugal-opens-tenders-for-1050-mva-of-battery-storage-capacity/",
+   "source": "ESS News",
+   "title_original": "Portugal opens tenders for 1,050 MVA of battery storage capacity",
+   "published": "2026-11-09T16:15:00+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://www.ess-news.com/wp-content/uploads/2026/11/Sonnedix-Portugal.jpg",
+   "headline": "葡萄牙开放1050MVA储能并网容量竞标，12月22日截止",
+   "why": "这是葡萄牙首次为储能单独拍卖并网容量，中标项目随后将进入设备采购阶段，可提前锁定开发商。",
+   "facts": [
+    "葡萄牙启动两项竞争程序，分配最多1050MVA储能并网容量",
+    "其中750MVA留给独立储能，300MVA给配储的新能源电站",
+    "申请截止日期为2026年12月22日"
+   ],
+   "entities": [
+    "葡萄牙政府"
+   ],
+   "region": "欧洲·葡萄牙",
+   "category": "政策法规",
+   "signal": "机会",
+   "impact": 3,
+   "action": "建立葡萄牙储能开发商名单，跟进中标结果",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "c1447bb71c8e576c",
+   "url": "https://source.benchmarkminerals.com/article/middle-east-conflict-set-to-push-china-needle-coke-prices-to-three-year-high",
+   "source": "Benchmark Mineral Intelligence",
+   "title_original": "Middle East conflict set to push China needle coke prices to three-year high",
+   "published": "2026-11-09T15:13:59+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://a.storyblok.com/f/287943243085208/5446x3060/4399ee11ff/oil-tanker-unloading.jpeg",
+   "headline": "中东冲突推高针状焦价格，负极成本或承压至明年一季度",
+   "why": "针状焦是人造石墨负极的重要原料，价格上行会传导到电芯成本，影响海外长单报价的利润空间。",
+   "facts": [
+    "Benchmark预计中国针状焦价格在2026年四季度大幅上涨",
+    "预计2027年一季度见顶，达到2023年初以来最高水平",
+    "10月布伦特原油始终高于100美元/桶，最高约117美元"
+   ],
+   "entities": [
+    "Benchmark Mineral Intelligence",
+    "Aramco"
+   ],
+   "region": "全球",
+   "category": "市场数据",
+   "signal": "风险",
+   "impact": 2,
+   "action": "评估负极成本上行对海外长单报价的影响",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "407620c703c0f9f7",
+   "url": "https://www.datacenterdynamics.com/en/news/riot-platforms-signs-910mw-agreement-with-unnamed-frontier-ai-lab/",
+   "source": "DatacenterDynamics",
+   "title_original": "Riot Platforms signs 910MW agreement with unnamed frontier AI lab",
+   "published": "2026-11-09T15:07:20+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://media.datacenterdynamics.com/media/images/corsicana-pr.2e16d0ba.fill-750x500.png",
+   "headline": "得州910MW AI数据中心签约，算力用电持续加码",
+   "why": "吉瓦级AI园区集中落地得州，将带动备用电源与配储需求；原文未披露该园区的储能配置，可作为潜在客户线索跟进。",
+   "facts": [
+    "Riot Platforms与一家未具名前沿AI实验室签署910MW IT容量合同，位于得州Corsicana园区",
+    "为期15年的三净租赁，另有两次五年续约选项",
+    "合同价值280亿美元，全部续约可达540亿美元"
+   ],
+   "entities": [
+    "Riot Platforms",
+    "AMD"
+   ],
+   "region": "美国·得克萨斯",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 3,
+   "action": "跟踪Corsicana园区的供电与储能方案及EPC",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "e030530cba4e7163",
+   "url": "https://biz.chosun.com/en/en-international/2026/11/09/N4DFBS5OXZBXPDBS2CEULZBNXQ/",
+   "source": "Chosunbiz",
+   "title_original": "US, China extend trade truce to January 10, 2025",
+   "published": "2026-11-09T14:34:00+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://biz.chosun.com/resizer/v2/GE3DEYZZGMZGINJRGFRWIMLGGY.jpg?auth=271d9e317c2709ce890112e303f1160627c4b3b92d9799954a5efd7391097f82&width=1200&height=630&smart=true",
+   "headline": "中美贸易休战延至1月10日，178类关税豁免续期",
+   "why": "休战延期为对美业务争取两个月窗口，但只是延期而非取消；原文未说明178类豁免是否涵盖电池产品，1月10日前后的谈判结果将决定关税走向。",
+   "facts": [
+    "中美各自宣布将始于“釜山协议”的贸易休战延长两个月，至明年1月10日",
+    "中方延长对美国商品加征24%关税的宽限期及稀土出口管制暂停",
+    "美方推迟针对中国造船和海运业的301措施，并延长178类中国商品的关税豁免"
+   ],
+   "entities": [
+    "国务院关税税则委员会"
+   ],
+   "region": "美国 / 中国",
+   "category": "政策法规",
+   "signal": "中性",
+   "impact": 4,
+   "action": "核查178类豁免清单是否涉及电池及储能部件",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "8a8ac64da6ff18a0",
+   "url": "https://www.globaltimes.cn/page/202611/1373970.shtml",
+   "source": "Global Times",
+   "title_original": "Green technologies need open markets to deliver on climate goals",
+   "published": "2026-11-09T13:30:00+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://www.globaltimes.cn/Portals/0/attachment/2026/2026-11-09/98f1cd3e-675e-48a5-a5c4-66ab8919b6e3.jpeg",
+   "headline": "环球时报：COP31开幕，呼吁绿色技术贸易开放",
+   "why": "官方媒体借COP31为中国清洁技术出口发声，反映中方在气候大会上的贸易议程，对欧美准入谈判有参考价值。",
+   "facts": [
+    "第31届联合国气候变化大会（COP31）在土耳其安塔利亚开幕",
+    "大会设有专门的“金融与贸易日”讨论贸易政策与气候转型",
+    "文章指出欧盟对中国电动车征收7.8%至35.3%的反补贴税"
+   ],
+   "entities": [
+    "COP31",
+    "环球时报",
+    "欧盟"
+   ],
+   "region": "全球",
+   "category": "政策法规",
+   "signal": "中性",
+   "impact": 2,
+   "action": "关注COP31贸易议题对欧盟清洁技术关税的影响",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "fed57ee9ef7aa7c4",
+   "url": "https://www.tomshardware.com/tech-industry/data-centers/china-builds-massive-800-megawatt-ai-data-center-campus-to-rival-us-stargate-project-galaxy-campus-delivers-first-120-megawatts-in-a-year-at-one-fifth-the-cost",
+   "source": "Tom's Hardware",
+   "title_original": "China builds massive 800-megawatt AI data center campus to rival US Stargate project — Galaxy campus delivers first 120 megawatts in a year at one-fifth the cost",
+   "published": "2026-11-09T13:00:00+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://cdn.mos.cms.futurecdn.net/rqn39aj9hMqYUZdPPwgxYd-2000-80.jpg",
+   "headline": "远景内蒙古800MW AI园区：风电加储能供电，成本仅美国五分之一",
+   "why": "“绿电+储能直供算力”模式受到海外研究机构关注，可作为向海外数据中心客户推广储能整体方案的样板案例。",
+   "facts": [
+    "SemiAnalysis报告称，远景在内蒙古建设800MW AI数据中心园区",
+    "首批120MW用时不到一年建成，成本约为美国同类项目的五分之一",
+    "园区采用风电、电池和800V直流供电"
+   ],
+   "entities": [
+    "Envision",
+    "SemiAnalysis",
+    "Stargate"
+   ],
+   "region": "中国·内蒙古",
+   "category": "项目动态",
+   "signal": "机会",
+   "impact": 3,
+   "action": "整理该案例作为海外数据中心客户的对标材料",
+   "model": "Claude（种子数据，离线生成）"
+  },
+  {
+   "id": "1ed377033c5cc8ac",
+   "url": "https://pv-magazine-usa.com/2026/11/09/sodium-ion-batteries-approach-cost-parity-with-lfp-with-70-gwh-covered-by-supply-agreements/",
+   "source": "pv magazine USA",
+   "title_original": "Sodium-ion batteries approach cost parity with LFP",
+   "published": "2026-11-09T12:50:45+00:00",
+   "broadcast": "2026-11-10T09:25:48+00:00",
+   "image": "https://pv-magazine-usa.com/wp-content/uploads/2025/03/Singeng-Sodium-ion-project-in-Hubei.jpg",
+   "headline": "伍德麦肯兹：钠离子电池逼近LFP成本，签约量超70GWh",
+   "why": "钠电在固定式储能领域接近成本平价，将影响海外储能招标的技术路线选择，也给钠电产能布局领先者带来先发优势。",
+   "facts": [
+    "伍德麦肯兹分析称，钠离子电池已签订的供应协议超过70GWh",
+    "研究覆盖中国、美国、德国和印度市场",
+    "钠离子电池被认为是固定式储能领域最有前景的锂电替代技术"
+   ],
+   "entities": [
+    "Wood Mackenzie"
+   ],
+   "region": "全球",
+   "category": "市场数据",
+   "signal": "机会",
+   "impact": 3,
+   "action": "评估海外储能项目中钠电方案的报价竞争力",
+   "model": "Claude（种子数据，离线生成）"
+  }
+ ]
+}

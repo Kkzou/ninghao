@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>宁好 · 海外能源情报</title>
+<meta name="description" content="以宁德时代海外业务视角解读美国 AI 数据中心、储能与新能源政策的实时情报流（个人作品集项目）">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B2A5B'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23EAF1FB' font-family='sans-serif'%3E宁%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">宁</div>
+      <div>
+        <div class="brand-name">宁好 <span>NingHao</span></div>
+        <div class="brand-sub">宁德时代海外业务 · 实时情报</div>
+      </div>
+    </div>
+    <div class="live" id="live"><span class="dot"></span><span id="live-text">连接中…</span></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="toolbar" aria-label="筛选">
+    <div class="chips" id="cats" role="tablist"></div>
+    <div class="toolbar-right">
+      <div class="seg" id="signals" role="group" aria-label="信号">
+        <button data-signal="" class="on">全部</button>
+        <button data-signal="机会">机会</button>
+        <button data-signal="风险">风险</button>
+      </div>
+      <label class="toggle"><input type="checkbox" id="important"> 只看重要</label>
+      <input class="search" id="search" type="search" placeholder="搜索 FEOC、PJM、Tesla…" aria-label="搜索">
+    </div>
+  </section>
+
+  <section id="hero" class="hero" hidden></section>
+  <section id="feed" class="feed" aria-live="polite"></section>
+  <p id="empty" class="empty" hidden>暂无符合条件的情报。</p>
+</main>
+
+<aside id="drawer" class="drawer" aria-hidden="true">
+  <div class="drawer-backdrop" data-close></div>
+  <article class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="d-headline">
+    <button class="drawer-close" data-close aria-label="关闭">✕</button>
+    <div id="drawer-body"></div>
+  </article>
+</aside>
+
+<div id="toast" class="toast" hidden></div>
+
+<footer class="footer wrap">
+  <p>宁好是个人作品集项目，基于公开信息，不代表宁德时代官方立场。标题与解读由 Claude 生成，可能有误，请以原文为准；配图版权归原媒体所有。</p>
+  <p>数据每 30 分钟自动更新 · 页面每分钟检查新播报</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
